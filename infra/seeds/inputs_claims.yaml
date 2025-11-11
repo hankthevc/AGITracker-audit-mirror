@@ -1,0 +1,93 @@
+# Inputs OOM Meter - A-tier Milestones
+# Training compute, DC power, algorithmic efficiency milestones
+# Source: Papers, official announcements, verified leaderboards
+
+training_flops:
+  - milestone: "1e24 FLOPs"
+    value: 1e24
+    date: "2022-03-01"
+    source: "Chinchilla paper (DeepMind, 2022)"
+    source_url: "https://arxiv.org/abs/2203.15556"
+    credibility: "A"
+    description: "Chinchilla: 1.4e24 FLOPs training run"
+    
+  - milestone: "1e25 FLOPs"
+    value: 1e25
+    date: "2023-03-14"
+    source: "GPT-4 Technical Report"
+    source_url: "https://arxiv.org/abs/2303.08774"
+    credibility: "A"
+    description: "GPT-4: Estimated ~2e25 FLOPs (per Epoch AI estimates)"
+    
+  - milestone: "1e26 FLOPs"
+    value: 1e26
+    date: "2024-12-01"
+    source: "Gemini 1.5 (estimated, Epoch AI)"
+    source_url: "https://epochai.org/data/notable-ai-models"
+    credibility: "B"
+    description: "Estimated frontier run reaching 1e26 FLOPs"
+    
+  - milestone: "1e27 FLOPs"
+    value: 1e27
+    date: "2026-Q2"
+    source: "Projected (Aschenbrenner, 2024)"
+    source_url: "https://situational-awareness.ai"
+    credibility: "B"
+    description: "Projected: 1e27 FLOPs run by mid-2026"
+
+dc_power:
+  - milestone: "0.1 GW DC"
+    value: 0.1
+    unit: "GW"
+    date: "2023-06-01"
+    source: "Microsoft/OpenAI cluster (reported)"
+    source_url: "https://www.semianalysis.com/p/gpt-4-architecture-datasets-costs"
+    credibility: "B"
+    description: "Large-scale cluster reaching ~100 MW sustained power"
+    
+  - milestone: "1 GW DC"
+    value: 1.0
+    unit: "GW"
+    date: "2025-Q4"
+    source: "Projected (xAI Colossus, Meta)"
+    source_url: "https://x.com/elonmusk/status/colossus"
+    credibility: "B"
+    description: "Projected: First 1 GW datacenter by end 2025"
+    
+  - milestone: "10 GW DC"
+    value: 10.0
+    unit: "GW"
+    date: "2027-Q4"
+    source: "Projected (Aschenbrenner, 2024)"
+    source_url: "https://situational-awareness.ai"
+    credibility: "B"
+    description: "Projected: 10 GW cluster by 2027-2028"
+
+algorithmic_efficiency:
+  - milestone: "+1 OOM since 2020"
+    value: 10.0
+    unit: "x"
+    date: "2023-09-01"
+    source: "Epoch AI algorithmic progress tracker"
+    source_url: "https://epochai.org/blog/algorithmic-progress"
+    credibility: "A"
+    description: "~10x improvement in algorithmic efficiency 2020-2023"
+    
+  - milestone: "+2 OOM since 2020"
+    value: 100.0
+    unit: "x"
+    date: "2025-Q2"
+    source: "Projected (Epoch AI trend)"
+    source_url: "https://epochai.org"
+    credibility: "B"
+    description: "Projected: 100x improvement by 2025 (doubling every 8-9 months)"
+    
+  - milestone: "+3 OOM since 2020"
+    value: 1000.0
+    unit: "x"
+    date: "2027-Q1"
+    source: "Projected (Epoch AI trend)"
+    source_url: "https://epochai.org"
+    credibility: "B"
+    description: "Projected: 1000x improvement by 2027"
+

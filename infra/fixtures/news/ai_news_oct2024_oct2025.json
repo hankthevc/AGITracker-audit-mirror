@@ -1,0 +1,149 @@
+[
+  {
+    "title": "OpenAI GPT-5 Released",
+    "summary": "OpenAI announces GPT-5, a significant leap in reasoning and coding capabilities. Achieves state-of-the-art performance on SWE-bench (approaching 90%), competitive programming, and graduate-level science. Demonstrates improved agentic capabilities for multi-step tasks.",
+    "url": "https://openai.com/gpt-5",
+    "publisher": "OpenAI",
+    "published_at": "2025-09-15T00:00:00Z"
+  },
+  {
+    "title": "Claude 4.5 Sonnet Thinking",
+    "summary": "Anthropic releases Claude 4.5 Sonnet with extended reasoning mode. Shows chain-of-thought capabilities similar to o1, with improved performance on coding benchmarks, mathematical reasoning, and complex multi-step problems. Introduces new Thinking mode for transparent reasoning traces.",
+    "url": "https://www.anthropic.com/claude-4-5-sonnet-thinking",
+    "publisher": "Anthropic",
+    "published_at": "2025-08-22T00:00:00Z"
+  },
+  {
+    "title": "Claude 4 Opus Released",
+    "summary": "Anthropic announces Claude 4 Opus, their most capable model. Significant improvements in reasoning, coding, and scientific analysis. Excels at agentic tasks and tool use.",
+    "url": "https://www.anthropic.com/claude-4",
+    "publisher": "Anthropic",
+    "published_at": "2025-06-10T00:00:00Z"
+  },
+  {
+    "title": "OpenAI Announces o3 Reasoning Model",
+    "summary": "OpenAI previews o3, next generation reasoning model showing major advances on ARC-AGI benchmark and competitive mathematics. Demonstrates improved planning and problem decomposition.",
+    "url": "https://openai.com/o3-preview",
+    "publisher": "OpenAI",
+    "published_at": "2025-07-18T00:00:00Z"
+  },
+  {
+    "title": "Google Gemini Ultra 2.0",
+    "summary": "Google DeepMind releases Gemini Ultra 2.0 with breakthrough performance on coding, reasoning, and multimodal tasks. Native agentic capabilities and improved tool use.",
+    "url": "https://blog.google/technology/ai/gemini-ultra-2",
+    "publisher": "Google DeepMind",
+    "published_at": "2025-05-20T00:00:00Z"
+  },
+  {
+    "title": "Meta Llama 4 405B",
+    "summary": "Meta releases Llama 4 405B, their most capable open model. Competitive with proprietary frontier models on coding, reasoning, and instruction following. Significant improvements in multi-turn conversation and agentic capabilities.",
+    "url": "https://ai.meta.com/blog/llama-4",
+    "publisher": "Meta AI",
+    "published_at": "2025-04-25T00:00:00Z"
+  },
+  {
+    "title": "Anthropic Announces $7B Funding Round",
+    "summary": "Anthropic raises $7B to scale compute infrastructure and safety research. Plans include training runs exceeding 10^26 FLOPs and expanded AI safety testing frameworks.",
+    "url": "https://www.anthropic.com/funding-2025",
+    "publisher": "Anthropic",
+    "published_at": "2025-03-12T00:00:00Z"
+  },
+  {
+    "title": "Microsoft and OpenAI Announce $100B Datacenter Project",
+    "summary": "Joint announcement of 'Stargate' datacenter project requiring multiple gigawatts of power. Aimed at training next-generation AI models with compute budgets approaching 10^27 FLOPs.",
+    "url": "https://news.microsoft.com/stargate-datacenter",
+    "publisher": "Microsoft",
+    "published_at": "2025-01-15T00:00:00Z"
+  },
+  {
+    "title": "xAI Grok 2 with Real-Time Data",
+    "summary": "xAI releases Grok 2 with real-time X (Twitter) integration. Shows strong performance on coding and reasoning benchmarks with unique real-time knowledge capabilities.",
+    "url": "https://x.ai/blog/grok-2",
+    "publisher": "xAI",
+    "published_at": "2024-12-20T00:00:00Z"
+  },
+  {
+    "title": "DeepSeek-V3 Achieves Competitive Performance",
+    "summary": "Chinese AI lab DeepSeek releases V3 model claiming GPT-4 level performance at fraction of training cost. Demonstrates algorithmic efficiency improvements and mixture-of-experts architecture advances.",
+    "url": "https://github.com/deepseek-ai/DeepSeek-V3",
+    "publisher": "DeepSeek",
+    "published_at": "2024-12-26T00:00:00Z"
+  },
+  {
+    "title": "Anthropic Claude 3.5 Sonnet (Updated)",
+    "summary": "Anthropic releases updated Claude 3.5 Sonnet with improved performance on coding and agentic tasks. Shows significant gains on SWE-bench and multi-step reasoning.",
+    "url": "https://www.anthropic.com/claude-3-5-sonnet-update",
+    "publisher": "Anthropic",
+    "published_at": "2024-10-22T00:00:00Z"
+  },
+  {
+    "title": "OpenAI o1-preview Expanded Access",
+    "summary": "OpenAI expands access to o1-preview model, showing advanced reasoning on mathematics, coding, and science. Early testing shows promising results on competitive programming and theorem proving.",
+    "url": "https://openai.com/o1-preview-expanded",
+    "publisher": "OpenAI",
+    "published_at": "2024-10-15T00:00:00Z"
+  },
+  {
+    "title": "Google AI Achieves Breakthrough on Protein Folding",
+    "summary": "Google DeepMind announces AlphaFold 3 with ability to predict protein-ligand interactions. While not directly AGI-related, demonstrates continued progress in applying AI to complex scientific problems.",
+    "url": "https://deepmind.google/alphafold-3",
+    "publisher": "Google DeepMind",
+    "published_at": "2024-11-08T00:00:00Z"
+  },
+  {
+    "title": "Meta Releases Llama 3.2 Vision Models",
+    "summary": "Meta introduces Llama 3.2 with vision capabilities, enabling multimodal understanding. 11B and 90B models show competitive performance on vision-language tasks.",
+    "url": "https://ai.meta.com/blog/llama-3-2-vision",
+    "publisher": "Meta AI",
+    "published_at": "2024-09-25T00:00:00Z"
+  },
+  {
+    "title": "Anthropic Publishes AI Safety Levels Framework",
+    "summary": "Anthropic releases detailed Anthropic Safety Levels (ASL) framework, defining capability thresholds and corresponding safety measures for increasingly powerful AI systems. ASL-3 triggers defined for models approaching autonomous replication capabilities.",
+    "url": "https://www.anthropic.com/asl-framework",
+    "publisher": "Anthropic",
+    "published_at": "2025-02-28T00:00:00Z"
+  },
+  {
+    "title": "OpenAI Preparedness Framework Update",
+    "summary": "OpenAI publishes updated Preparedness Framework with enhanced risk categories for cybersecurity, chemical/biological threats, and autonomous AI capabilities. Introduces new Medium-High risk thresholds requiring additional safeguards.",
+    "url": "https://openai.com/preparedness-framework-update",
+    "publisher": "OpenAI",
+    "published_at": "2025-01-30T00:00:00Z"
+  },
+  {
+    "title": "NVIDIA H200 GPUs Shipping at Scale",
+    "summary": "NVIDIA announces H200 Tensor Core GPUs now shipping to major cloud providers and AI labs. Enables larger training runs with improved memory bandwidth for trillion-parameter models.",
+    "url": "https://www.nvidia.com/h200-shipping",
+    "publisher": "NVIDIA",
+    "published_at": "2025-03-05T00:00:00Z"
+  },
+  {
+    "title": "Mistral Large 2",
+    "summary": "Mistral AI releases Large 2 with 123B parameters. Shows strong performance on coding and multilingual tasks, competitive with larger proprietary models on many benchmarks.",
+    "url": "https://mistral.ai/news/mistral-large-2",
+    "publisher": "Mistral",
+    "published_at": "2024-10-30T00:00:00Z"
+  },
+  {
+    "title": "Google Announces Project Astra",
+    "summary": "Google DeepMind previews Project Astra, a universal AI agent designed for real-time multimodal understanding and task completion. Demonstrates prototype capabilities for extended autonomous operation.",
+    "url": "https://blog.google/technology/ai/project-astra",
+    "publisher": "Google DeepMind",
+    "published_at": "2025-05-14T00:00:00Z"
+  },
+  {
+    "title": "Meta Announces AI Research Supercluster Expansion",
+    "summary": "Meta expands AI Research SuperCluster to include 600,000 H100-equivalent GPUs. Aims to support training runs approaching 10^26-10^27 FLOP range for next-generation models.",
+    "url": "https://ai.meta.com/research-supercluster-expansion",
+    "publisher": "Meta AI",
+    "published_at": "2025-02-14T00:00:00Z"
+  },
+  {
+    "title": "Cohere Command R7B Released",
+    "summary": "Cohere releases Command R7B optimized for RAG and tool use. Shows strong performance on business applications and enterprise deployment scenarios.",
+    "url": "https://cohere.com/blog/command-r7b",
+    "publisher": "Cohere",
+    "published_at": "2024-11-20T00:00:00Z"
+  }
+]

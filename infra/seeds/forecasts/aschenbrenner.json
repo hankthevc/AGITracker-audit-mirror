@@ -1,0 +1,66 @@
+{
+  "roadmap": "Aschenbrenner",
+  "author": "Leopold Aschenbrenner",
+  "source": "Situational Awareness",
+  "url": "https://situational-awareness.ai/",
+  "description": "AGI by 2027 scenario with national security implications",
+  "predictions": [
+    {
+      "signpost_code": "CAP-R01",
+      "prediction_date": "2026-06-01",
+      "prediction_text": "Automated AI researchers achieving significant R&D automation by mid-2026",
+      "confidence": 0.7
+    },
+    {
+      "signpost_code": "INP-R01",
+      "prediction_date": "2026-01-01",
+      "prediction_value": 1.0e26,
+      "prediction_text": "Training runs reaching 10^26 FLOPs by 2026",
+      "confidence": 0.8
+    },
+    {
+      "signpost_code": "INP-R02",
+      "prediction_date": "2027-06-01",
+      "prediction_value": 1.0e27,
+      "prediction_text": "10^27 FLOP training runs by mid-2027, approaching AGI",
+      "confidence": 0.6
+    },
+    {
+      "signpost_code": "INP-R03",
+      "prediction_date": "2027-01-01",
+      "prediction_text": "100 million H100-equivalent GPUs deployed for AGI training",
+      "confidence": 0.5
+    },
+    {
+      "signpost_code": "INP-R05",
+      "prediction_date": "2027-01-01",
+      "prediction_value": 5.0,
+      "prediction_text": "5 GW datacenter power capacity for frontier training",
+      "confidence": 0.6
+    },
+    {
+      "signpost_code": "SEC-R01",
+      "prediction_date": "2026-01-01",
+      "prediction_text": "Model weight security becomes critical national security concern",
+      "confidence": 0.8
+    },
+    {
+      "signpost_code": "SEC-R04",
+      "prediction_date": "2026-06-01",
+      "prediction_text": "Mandatory third-party audits for frontier AI systems",
+      "confidence": 0.7
+    },
+    {
+      "signpost_code": "AGT-R01",
+      "prediction_date": "2026-03-01",
+      "prediction_text": "Multi-step agentic capabilities reaching human-level reliability",
+      "confidence": 0.65
+    },
+    {
+      "signpost_code": "AGT-R02",
+      "prediction_date": "2027-01-01",
+      "prediction_text": "Multi-day autonomous projects completed by AI agents",
+      "confidence": 0.6
+    }
+  ]
+}

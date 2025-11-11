@@ -1,0 +1,27 @@
+[
+  {
+    "signpost_code": "swe_bench_85",
+    "target_date": "2026-12-31",
+    "label": "SWE-bench ≥85% by 2027",
+    "confidence": 0.6,
+    "rationale": "AI 2027 project timeline estimate",
+    "provisional": true
+  },
+  {
+    "signpost_code": "compute_1e27",
+    "target_date": "2027-06-30",
+    "label": "10^27 FLOP training run",
+    "confidence": 0.5,
+    "rationale": "Mid-2027 compute scaling projection",
+    "provisional": true
+  },
+  {
+    "signpost_code": "gpqa_phd_parity",
+    "target_date": "2026-06-30",
+    "label": "GPQA PhD-level performance",
+    "confidence": 0.55,
+    "rationale": "Reasoning capability milestone",
+    "provisional": true
+  }
+]
+

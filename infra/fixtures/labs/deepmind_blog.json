@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Gemini 3 Ultra: Multimodal Reasoning at Scale",
+    "summary": "Gemini 3 Ultra achieves breakthrough results on multimodal benchmarks, including 89% on GPQA Diamond and strong performance on vision-language tasks.",
+    "url": "https://deepmind.google/blog/gemini-3-ultra-announcement",
+    "published_at": "2025-10-13T12:00:00Z",
+    "author": "Google DeepMind"
+  },
+  {
+    "title": "Chinchilla Scaling Laws Revisited: Compute-Optimal Training in 2025",
+    "summary": "We present updated scaling laws for compute-optimal training, showing that optimal model size continues to scale with available compute.",
+    "url": "https://deepmind.google/research/chinchilla-scaling-2025",
+    "published_at": "2025-10-01T09:00:00Z",
+    "author": "Google DeepMind Research"
+  }
+]
+

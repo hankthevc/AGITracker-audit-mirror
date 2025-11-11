@@ -1,0 +1,51 @@
+# P1-2: PgBouncer for database connection pooling
+#
+# Usage:
+#   docker-compose -f docker-compose.dev.yml -f docker-compose.pgbouncer.yml up
+#
+# This adds PgBouncer as a connection pooler in front of PostgreSQL.
+# Update DATABASE_URL to point to pgbouncer:6432 instead of postgres:5432
+
+version: '3.8'
+
+services:
+  pgbouncer:
+    image: pgbouncer/pgbouncer:latest
+    container_name: agi-tracker-pgbouncer
+    environment:
+      # Database connection
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - DB_NAME=agi_signpost_tracker
+      
+      # Connection pooling settings
+      - POOL_MODE=transaction  # transaction mode (fastest)
+      - MAX_CLIENT_CONN=1000   # Max client connections
+      - DEFAULT_POOL_SIZE=20   # Connections per database
+      - MIN_POOL_SIZE=5        # Minimum pool size
+      - RESERVE_POOL_SIZE=5    # Reserve connections
+      - MAX_DB_CONNECTIONS=25  # Max connections to PostgreSQL
+      
+      # Timeouts
+      - SERVER_IDLE_TIMEOUT=600     # Close unused server connections after 10 min
+      - SERVER_LIFETIME=3600        # Recycle connections after 1 hour
+      - CLIENT_IDLE_TIMEOUT=0       # Don't close idle client connections
+      
+      # Performance
+      - SERVER_RESET_QUERY=DISCARD ALL  # Reset connection state
+      - SERVER_CHECK_DELAY=30           # Health check interval
+      
+    ports:
+      - "6432:6432"
+    depends_on:
+      - postgres
+    networks:
+      - agi-tracker-network
+    restart: unless-stopped
+
+networks:
+  agi-tracker-network:
+    external: true
+

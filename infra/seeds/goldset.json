@@ -1,0 +1,333 @@
+{
+  "version": "1.0",
+  "description": "Golden test set for claim extraction and mapping evaluation",
+  "examples": [
+    {
+      "id": 1,
+      "news_snippet": "New AI model achieves 68% on SWE-bench Verified, surpassing previous best",
+      "expected_claims": [
+        {
+          "metric_name": "SWE-bench Verified",
+          "metric_value": 68.0,
+          "unit": "%"
+        }
+      ],
+      "expected_benchmarks": ["swe_bench_verified"],
+      "expected_signposts": ["swe_bench_85", "swe_bench_90"]
+    },
+    {
+      "id": 2,
+      "news_snippet": "GPT-5 scores 72% on GPQA Diamond, approaching PhD-level performance",
+      "expected_claims": [
+        {
+          "metric_name": "GPQA Diamond",
+          "metric_value": 72.0,
+          "unit": "%"
+        }
+      ],
+      "expected_benchmarks": ["gpqa_diamond"],
+      "expected_signposts": ["gpqa_sota", "gpqa_phd_parity"]
+    },
+    {
+      "id": 3,
+      "news_snippet": "OpenAI announces training run using 10^26 FLOP",
+      "expected_claims": [
+        {
+          "metric_name": "Training FLOP",
+          "metric_value": 26.0,
+          "unit": "log10"
+        }
+      ],
+      "expected_benchmarks": [],
+      "expected_signposts": ["compute_1e26"]
+    },
+    {
+      "id": 4,
+      "news_snippet": "OSWorld benchmark: Latest model reaches 28% task completion",
+      "expected_claims": [
+        {
+          "metric_name": "OSWorld",
+          "metric_value": 28.0,
+          "unit": "%"
+        }
+      ],
+      "expected_benchmarks": ["osworld"],
+      "expected_signposts": ["osworld_65", "osworld_85"]
+    },
+    {
+      "id": 5,
+      "news_snippet": "WebArena: New agent achieves 52% success rate on web tasks",
+      "expected_claims": [
+        {
+          "metric_name": "WebArena",
+          "metric_value": 52.0,
+          "unit": "%"
+        }
+      ],
+      "expected_benchmarks": ["webarena"],
+      "expected_signposts": ["webarena_70", "webarena_85"]
+    },
+    {
+      "id": 6,
+      "news_snippet": "Breakthrough: OSWorld-Verified reaches 70% on complex OS tasks",
+      "expected_claims": [
+        {
+          "metric_name": "OSWorld",
+          "metric_value": 70.0,
+          "unit": "%"
+        }
+      ],
+      "expected_benchmarks": ["osworld_verified"],
+      "expected_signposts": ["osworld_65", "osworld_85"]
+    },
+    {
+      "id": 7,
+      "news_snippet": "New model scores 87% on OSWorld-Verified, near-human proficiency",
+      "expected_claims": [
+        {
+          "metric_name": "OSWorld",
+          "metric_value": 87.0,
+          "unit": "%"
+        }
+      ],
+      "expected_benchmarks": ["osworld_verified"],
+      "expected_signposts": ["osworld_65", "osworld_85"]
+    },
+    {
+      "id": 8,
+      "news_snippet": "OSWorld benchmark: GPT-5 achieves 45% task completion rate",
+      "expected_claims": [
+        {
+          "metric_name": "OSWorld",
+          "metric_value": 45.0,
+          "unit": "%"
+        }
+      ],
+      "expected_benchmarks": ["osworld"],
+      "expected_signposts": ["osworld_65", "osworld_85"]
+    },
+    {
+      "id": 9,
+      "news_snippet": "Claude 4 reaches 82% on OSWorld, approaching automation threshold",
+      "expected_claims": [
+        {
+          "metric_name": "OSWorld",
+          "metric_value": 82.0,
+          "unit": "%"
+        }
+      ],
+      "expected_benchmarks": ["osworld"],
+      "expected_signposts": ["osworld_65", "osworld_85"]
+    },
+    {
+      "id": 10,
+      "news_snippet": "OSWorld-Verified: New SOTA at 65%, meeting first milestone",
+      "expected_claims": [
+        {
+          "metric_name": "OSWorld",
+          "metric_value": 65.0,
+          "unit": "%"
+        }
+      ],
+      "expected_benchmarks": ["osworld_verified"],
+      "expected_signposts": ["osworld_65"]
+    },
+    {
+      "id": 11,
+      "news_snippet": "WebArena success: Agent scores 75% on web navigation tasks",
+      "expected_claims": [
+        {
+          "metric_name": "WebArena",
+          "metric_value": 75.0,
+          "unit": "%"
+        }
+      ],
+      "expected_benchmarks": ["webarena"],
+      "expected_signposts": ["webarena_70", "webarena_85"]
+    },
+    {
+      "id": 12,
+      "news_snippet": "VisualWebArena: GPT-4V achieves 42% on visual web tasks",
+      "expected_claims": [
+        {
+          "metric_name": "VisualWebArena",
+          "metric_value": 42.0,
+          "unit": "%"
+        }
+      ],
+      "expected_benchmarks": ["visualwebarena"],
+      "expected_signposts": ["webarena_70", "webarena_85"]
+    },
+    {
+      "id": 13,
+      "news_snippet": "WebArena milestone: First agent crosses 85% threshold",
+      "expected_claims": [
+        {
+          "metric_name": "WebArena",
+          "metric_value": 85.0,
+          "unit": "%"
+        }
+      ],
+      "expected_benchmarks": ["webarena"],
+      "expected_signposts": ["webarena_70", "webarena_85"]
+    },
+    {
+      "id": 14,
+      "news_snippet": "New WebArena record: 88% task success with Claude 4",
+      "expected_claims": [
+        {
+          "metric_name": "WebArena",
+          "metric_value": 88.0,
+          "unit": "%"
+        }
+      ],
+      "expected_benchmarks": ["webarena"],
+      "expected_signposts": ["webarena_70", "webarena_85"]
+    },
+    {
+      "id": 15,
+      "news_snippet": "WebArena + VisualWebArena: Combined score of 68% achieved",
+      "expected_claims": [
+        {
+          "metric_name": "WebArena",
+          "metric_value": 68.0,
+          "unit": "%"
+        }
+      ],
+      "expected_benchmarks": ["webarena"],
+      "expected_signposts": ["webarena_70", "webarena_85"]
+    },
+    {
+      "id": 16,
+      "news_snippet": "GPQA-Diamond: New model scores 78%, exceeding PhD-level baseline",
+      "expected_claims": [
+        {
+          "metric_name": "GPQA Diamond",
+          "metric_value": 78.0,
+          "unit": "%"
+        }
+      ],
+      "expected_benchmarks": ["gpqa_diamond"],
+      "expected_signposts": ["gpqa_sota", "gpqa_phd_parity"]
+    },
+    {
+      "id": 17,
+      "news_snippet": "GPQA Diamond: Claude 3.5 reaches 87% accuracy, PhD expert parity",
+      "expected_claims": [
+        {
+          "metric_name": "GPQA Diamond",
+          "metric_value": 87.0,
+          "unit": "%"
+        }
+      ],
+      "expected_benchmarks": ["gpqa_diamond"],
+      "expected_signposts": ["gpqa_sota", "gpqa_phd_parity"]
+    },
+    {
+      "id": 18,
+      "news_snippet": "GPT-5 scores 0.81 on GPQA-Diamond, approaching expert-level",
+      "expected_claims": [
+        {
+          "metric_name": "GPQA Diamond",
+          "metric_value": 81.0,
+          "unit": "%"
+        }
+      ],
+      "expected_benchmarks": ["gpqa_diamond"],
+      "expected_signposts": ["gpqa_sota", "gpqa_phd_parity"]
+    },
+    {
+      "id": 19,
+      "news_snippet": "GPQA-Diamond SOTA: 75% accuracy on PhD-level science questions",
+      "expected_claims": [
+        {
+          "metric_name": "GPQA Diamond",
+          "metric_value": 75.0,
+          "unit": "%"
+        }
+      ],
+      "expected_benchmarks": ["gpqa_diamond"],
+      "expected_signposts": ["gpqa_sota"]
+    },
+    {
+      "id": 20,
+      "news_snippet": "GPQA Diamond breakthrough: 90% accuracy surpasses PhD experts",
+      "expected_claims": [
+        {
+          "metric_name": "GPQA Diamond",
+          "metric_value": 90.0,
+          "unit": "%"
+        }
+      ],
+      "expected_benchmarks": ["gpqa_diamond"],
+      "expected_signposts": ["gpqa_sota", "gpqa_phd_parity"]
+    },
+    {
+      "id": 21,
+      "news_snippet": "Training compute milestone: 1e27 FLOPs achieved in latest run",
+      "expected_claims": [
+        {
+          "metric_name": "Training FLOPs",
+          "metric_value": 1e27,
+          "unit": "FLOPs"
+        }
+      ],
+      "expected_benchmarks": [],
+      "expected_signposts": ["inputs_flops_27"]
+    },
+    {
+      "id": 22,
+      "news_snippet": "xAI announces 1 GW datacenter for AI training cluster",
+      "expected_claims": [
+        {
+          "metric_name": "DC Power",
+          "metric_value": 1.0,
+          "unit": "GW"
+        }
+      ],
+      "expected_benchmarks": [],
+      "expected_signposts": ["inputs_dc_1gw"]
+    },
+    {
+      "id": 23,
+      "news_snippet": "Algorithmic efficiency: 100x improvement since 2020 baseline",
+      "expected_claims": [
+        {
+          "metric_name": "Algorithmic Efficiency",
+          "metric_value": 100.0,
+          "unit": "x"
+        }
+      ],
+      "expected_benchmarks": [],
+      "expected_signposts": ["inputs_algo_oom"]
+    },
+    {
+      "id": 24,
+      "news_snippet": "Security milestone: Industry adopts HSM-protected model weights",
+      "expected_claims": [
+        {
+          "metric_name": "Security Maturity",
+          "metric_value": 0.3,
+          "unit": "score"
+        }
+      ],
+      "expected_benchmarks": [],
+      "expected_signposts": ["sec_maturity"]
+    },
+    {
+      "id": 25,
+      "news_snippet": "AI safety: Mandatory pre-deployment evals now industry standard",
+      "expected_claims": [
+        {
+          "metric_name": "Eval Mandate",
+          "metric_value": 1.0,
+          "unit": "binary"
+        }
+      ],
+      "expected_benchmarks": [],
+      "expected_signposts": ["mandatory_evals"]
+    }
+  ],
+  "notes": "Golden set expanded to 25 examples covering OSWorld (5), WebArena (5), GPQA (5), Inputs (3), Security (2), and original (5). Production system would have 100+ examples covering edge cases, ambiguous claims, multi-metric claims, and various source types."
+}
+

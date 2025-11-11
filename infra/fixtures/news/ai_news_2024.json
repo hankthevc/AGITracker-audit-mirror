@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Introducing OpenAI o1",
+    "summary": "A new series of AI models designed to spend more time thinking before responding. o1 ranks in the 89th percentile on Codeforces competitive programming, places among top 500 students on AIME math olympiad qualifier, and exceeds PhD-level accuracy on GPQA physics/biology/chemistry benchmark.",
+    "url": "https://openai.com/index/learning-to-reason-with-llms/",
+    "publisher": "OpenAI",
+    "published_at": "2024-09-12T00:00:00Z"
+  },
+  {
+    "title": "Claude 3.5 Sonnet",
+    "summary": "Anthropic's most intelligent model, outperforming competitor models and Claude 3 Opus across evaluations. Shows significant improvements on coding, reasoning, and graduate-level science questions.",
+    "url": "https://www.anthropic.com/news/claude-3-5-sonnet",
+    "publisher": "Anthropic",
+    "published_at": "2024-06-20T00:00:00Z"
+  },
+  {
+    "title": "Gemini 2.0 Flash",
+    "summary": "Google's next generation AI model with native multimodality, improved reasoning, and tool use. Gemini 2.0 Flash designed specifically for agentic applications.",
+    "url": "https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/",
+    "publisher": "Google DeepMind",
+    "published_at": "2024-12-11T00:00:00Z"
+  },
+  {
+    "title": "Meta Llama 3.3 70B",
+    "summary": "Meta releases Llama 3.3 70B which rivals performance of Llama 3.1 405B with same cost and latency as 70B model. Demonstrates algorithmic efficiency improvements.",
+    "url": "https://ai.meta.com/blog/llama-3-3/",
+    "publisher": "Meta AI",
+    "published_at": "2024-12-06T00:00:00Z"
+  },
+  {
+    "title": "Claude 3.5 Haiku",
+    "summary": "Anthropic's fastest model, matching Claude 3 Opus capabilities at same speed and cost as previous Haiku. Strong performance on coding and analysis tasks.",
+    "url": "https://www.anthropic.com/news/claude-3-5-haiku",
+    "publisher": "Anthropic",
+    "published_at": "2024-11-04T00:00:00Z"
+  },
+  {
+    "title": "GPT-4o System Card Released",
+    "summary": "OpenAI publishes comprehensive system card for GPT-4o, detailing multimodal capabilities, safety evaluations, and performance across benchmarks including reasoning and coding tasks.",
+    "url": "https://openai.com/research/gpt-4o-system-card",
+    "publisher": "OpenAI",
+    "published_at": "2024-05-13T00:00:00Z"
+  },
+  {
+    "title": "Anthropic's Responsible Scaling Policy Update",
+    "summary": "Anthropic publishes updated Responsible Scaling Policy including ASL-3 safeguards, capability thresholds, and deployment criteria for advanced AI systems.",
+    "url": "https://www.anthropic.com/news/anthropics-responsible-scaling-policy",
+    "publisher": "Anthropic",
+    "published_at": "2024-09-13T00:00:00Z"
+  },
+  {
+    "title": "Meta Llama 3 Released",
+    "summary": "Meta releases Llama 3 8B and 70B models with significant improvements in reasoning, coding, and multilingual capabilities. Claims competitive performance with proprietary models.",
+    "url": "https://ai.meta.com/blog/meta-llama-3/",
+    "publisher": "Meta AI",
+    "published_at": "2024-04-18T00:00:00Z"
+  },
+  {
+    "title": "Gemini 1.5 Pro with 1M Token Context",
+    "summary": "Google DeepMind announces Gemini 1.5 Pro with breakthrough 1 million token context window, enabling analysis of hour-long videos, codebases, and long documents.",
+    "url": "https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/",
+    "publisher": "Google DeepMind",
+    "published_at": "2024-02-15T00:00:00Z"
+  },
+  {
+    "title": "Claude 3 Family Launched",
+    "summary": "Anthropic releases Claude 3 family (Opus, Sonnet, Haiku) with major advances in analysis, coding, and reasoning. Claude 3 Opus sets new benchmarks on graduate-level reasoning (GPQA) and coding (HumanEval).",
+    "url": "https://www.anthropic.com/news/claude-3-family",
+    "publisher": "Anthropic",
+    "published_at": "2024-03-04T00:00:00Z"
+  }
+]

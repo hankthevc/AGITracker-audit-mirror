@@ -1,0 +1,96 @@
+# Security Maturity Signals - A/B Tier Evidence
+# Weighted signals for computing 0..1 security maturity score
+# Only A/B tier signals affect the score; C/D shown as provisional
+
+signals:
+  - id: "hsm_model_weights"
+    name: "HSM-Protected Model Weights"
+    description: "Model weights secured with HSM-like controls against exfiltration"
+    credibility: "A"
+    weight: 0.20
+    maturity_contrib: 0.15
+    date: "2024-Q3"
+    source_url: "https://example.com/frontier-safety-framework"
+    source_type: "paper"
+    domain: "frontier-labs.ai"
+    
+  - id: "red_team_exercises"
+    name: "Regular Red Team Exercises"
+    description: "Documented red team exercises for misuse detection"
+    credibility: "A"
+    weight: 0.15
+    maturity_contrib: 0.12
+    date: "2024-Q2"
+    source_url: "https://openai.com/safety/red-teaming"
+    source_type: "blog"
+    domain: "openai.com"
+    
+  - id: "insider_threat_program"
+    name: "Insider Threat Program"
+    description: "Comprehensive insider threat monitoring and mitigation"
+    credibility: "B"
+    weight: 0.12
+    maturity_contrib: 0.08
+    date: "2024-Q1"
+    source_url: "https://anthropic.com/security"
+    source_type: "blog"
+    domain: "anthropic.com"
+    
+  - id: "security_org_structure"
+    name: "Dedicated Security Organization"
+    description: "Independent security organization with red team capabilities"
+    credibility: "A"
+    weight: 0.18
+    maturity_contrib: 0.14
+    date: "2024-Q2"
+    source_url: "https://deepmind.google/safety"
+    source_type: "leaderboard"
+    domain: "deepmind.google"
+    
+  - id: "external_audit"
+    name: "External Security Audit Attestation"
+    description: "Third-party security audit with public attestation"
+    credibility: "A"
+    weight: 0.15
+    maturity_contrib: 0.12
+    date: "2024-Q4"
+    source_url: "https://www.anthropic.com/news/security-audit"
+    source_type: "paper"
+    domain: "anthropic.com"
+    
+  - id: "inference_monitoring"
+    name: "Deployed Inference Monitoring"
+    description: "Real-time monitoring of model inference for misuse patterns"
+    credibility: "B"
+    weight: 0.10
+    maturity_contrib: 0.07
+    date: "2024-Q3"
+    source_url: "https://openai.com/blog/safety-monitoring"
+    source_type: "blog"
+    domain: "openai.com"
+    
+  - id: "weight_access_controls"
+    name: "Model Weight Access Controls"
+    description: "Strict access controls and audit logging for model weights"
+    credibility: "A"
+    weight: 0.10
+    maturity_contrib: 0.08
+    date: "2024-Q2"
+    source_url: "https://www.microsoft.com/ai-security"
+    source_type: "leaderboard"
+    domain: "microsoft.com"
+    
+  - id: "security_bounty"
+    name: "Security Bounty Program"
+    description: "Public security bounty program for vulnerability disclosure"
+    credibility: "B"
+    weight: 0.08
+    maturity_contrib: 0.05
+    date: "2024-Q1"
+    source_url: "https://openai.com/security/bug-bounty"
+    source_type: "blog"
+    domain: "openai.com"
+
+# Note: C/D tier signals would be listed separately and marked as "provisional"
+# They do NOT contribute to maturity score but are shown in UI for transparency
+

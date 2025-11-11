@@ -1,0 +1,19 @@
+[
+  {
+    "title": "Anthropic's Claude 4 Sets New Record on Multi-Step Reasoning Tasks",
+    "summary": "Anthropic released Claude 4 Opus, which achieves 92% on complex multi-step planning benchmarks, demonstrating improved agentic capabilities.",
+    "url": "https://apnews.com/article/anthropic-claude-4-release-abc123",
+    "published_at": "2025-10-11T09:00:00Z",
+    "author": "Mike Press",
+    "outlet": "Associated Press"
+  },
+  {
+    "title": "Meta Announces Open-Source Multimodal Model with 1M Context Window",
+    "summary": "Meta AI released Llama 4, an open-source model supporting text, images, and video with a 1 million token context window.",
+    "url": "https://apnews.com/article/meta-llama-4-multimodal-xyz789",
+    "published_at": "2025-10-10T11:30:00Z",
+    "author": "Lisa Tech",
+    "outlet": "Associated Press"
+  }
+]
+

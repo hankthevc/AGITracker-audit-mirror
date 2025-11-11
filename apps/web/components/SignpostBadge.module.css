@@ -1,0 +1,15 @@
+/* SignpostBadge - Signpost code chip */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .25rem .5rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--brand), transparent 88%);
+  color: var(--brand);
+  font: 600 .75rem/1 var(--font-sans);
+  letter-spacing: .02em;
+}
+

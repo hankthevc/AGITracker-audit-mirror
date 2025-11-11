@@ -1,0 +1,19 @@
+[
+  {
+    "signpost_code": "compute_1e27",
+    "target_date": "2027-12-31",
+    "label": "Bio anchors median timeline",
+    "confidence": 0.4,
+    "rationale": "Median transformative AI timeline",
+    "provisional": true
+  },
+  {
+    "signpost_code": "gpqa_phd_parity",
+    "target_date": "2028-06-30",
+    "label": "PhD-level reasoning milestone",
+    "confidence": 0.45,
+    "rationale": "Capability proxy for TAI",
+    "provisional": true
+  }
+]
+

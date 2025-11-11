@@ -1,0 +1,19 @@
+[
+  {
+    "signpost_code": "swe_bench_90",
+    "target_date": "2026-12-31",
+    "label": "Short timelines scenario",
+    "confidence": 0.3,
+    "rationale": "MIRI/Soares aggressive timeline",
+    "provisional": true
+  },
+  {
+    "signpost_code": "gpqa_phd_parity",
+    "target_date": "2026-06-30",
+    "label": "Rapid capability gain",
+    "confidence": 0.35,
+    "rationale": "Short timelines proxy",
+    "provisional": true
+  }
+]
+

@@ -1,0 +1,78 @@
+# Benchmark Catalog for AGI Signpost Tracker
+# Sources: AI-2027, METR, Epoch AI, community benchmarks
+
+# First-class benchmarks (affect main gauges)
+first_class:
+  - code: swe_bench_verified
+    name: SWE-bench Verified
+    family: SWE_BENCH_VERIFIED
+    url: https://www.swebench.com
+    tier: A
+    description: Real-world software engineering tasks from GitHub pull requests
+
+  - code: osworld
+    name: OSWorld
+    family: OSWORLD
+    url: https://os-world.github.io
+    tier: A
+    description: Complex operating system-level tasks requiring multi-step reasoning
+
+  - code: webarena
+    name: WebArena
+    family: WEBARENA
+    url: https://webarena.dev
+    tier: A
+    description: Web navigation and interaction tasks simulating real-world usage
+
+  - code: gpqa_diamond
+    name: GPQA Diamond
+    family: GPQA_DIAMOND
+    url: https://github.com/idavidrein/gpqa
+    tier: A
+    description: PhD-level scientific reasoning questions across multiple domains
+
+# Monitor-only benchmarks (tracked but don't affect main gauges)
+monitor_only:
+  - code: humanitys_last_exam_text
+    name: Humanity's Last Exam (Text-Only)
+    family: OTHER
+    url: https://scale.com/leaderboard/hle
+    tier: B
+    provisional: true
+    description: PhD-level reasoning breadth benchmark with known label-quality issues in Bio/Chem subsets
+    quality_note: "Currently B-tier (Provisional) evidence only. Does not affect main composite until A-tier evidence available."
+    first_class: false
+
+  - code: aime
+    name: AIME (Math Competition)
+    family: OTHER
+    url: https://github.com/AI-MO/aimo
+    tier: B
+    description: American Invitational Mathematics Examination problems
+    first_class: false
+
+  - code: codeforces
+    name: Codeforces Competitive Programming
+    family: OTHER
+    url: https://codeforces.com
+    tier: B
+    description: Competitive programming challenges requiring algorithmic problem-solving
+    first_class: false
+
+# Additional tracking (research interest, lower priority)
+research:
+  - code: mmlu_pro
+    name: MMLU-Pro
+    family: OTHER
+    url: https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro
+    tier: B
+    description: Enhanced MMLU with more challenging distractors
+    first_class: false
+
+  - code: livebench
+    name: LiveBench
+    family: OTHER
+    url: https://livebench.ai
+    tier: B
+    description: Contamination-free benchmark updated monthly
+    first_class: false

@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Scaling Laws for Neural Language Models beyond 10^27 FLOPs",
+    "summary": "We investigate scaling behavior of transformer models trained with unprecedented compute budgets. Results suggest continued performance gains with 10^27+ FLOP training runs.",
+    "url": "https://arxiv.org/abs/2510.12345",
+    "authors": ["Smith et al."],
+    "published_at": "2025-10-12T00:00:00Z",
+    "categories": ["cs.LG", "cs.AI"]
+  },
+  {
+    "title": "BenchAgent: Automated Benchmark Solving via Multi-Step Reasoning",
+    "summary": "We introduce BenchAgent, achieving 73% on GPQA Diamond through decomposition and tool use. Analysis shows emergent planning capabilities.",
+    "url": "https://arxiv.org/abs/2510.11234",
+    "authors": ["Johnson et al."],
+    "published_at": "2025-10-09T00:00:00Z",
+    "categories": ["cs.AI", "cs.CL"]
+  },
+  {
+    "title": "OSWorld-V2: Expanding Computer Use Benchmarks",
+    "summary": "Extended OSWorld benchmark with 500 new tasks. Current SOTA models achieve 28% success rate, indicating substantial room for improvement.",
+    "url": "https://arxiv.org/abs/2510.10123",
+    "authors": ["Chen et al."],
+    "published_at": "2025-10-06T00:00:00Z",
+    "categories": ["cs.AI", "cs.HC"]
+  }
+]
+

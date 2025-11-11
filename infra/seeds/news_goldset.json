@@ -1,0 +1,452 @@
+[
+  {
+    "id": "goldset_001",
+    "title": "OpenAI announces GPT-5 with 90% SWE-bench performance",
+    "summary": "New model achieves 90.5% on SWE-bench Verified, marking significant progress in automated code generation.",
+    "evidence_tier": "B",
+    "expected_signposts": ["swe_bench_90"],
+    "expected_values": [90.5],
+    "rationale": "Explicit percentage match for SWE-bench-90 threshold"
+  },
+  {
+    "id": "goldset_002",
+    "title": "Anthropic's Claude achieves 73% on GPQA Diamond",
+    "summary": "Claude 4 scores 73.2% on GPQA Diamond benchmark, approaching expert-level performance.",
+    "evidence_tier": "B",
+    "expected_signposts": ["gpqa_75"],
+    "expected_values": [73.2],
+    "rationale": "GPQA Diamond keyword + percentage"
+  },
+  {
+    "id": "goldset_003",
+    "title": "New AI training run uses 10^27 FLOPs",
+    "summary": "Anonymous lab confirms training run exceeding 10^27 floating point operations.",
+    "evidence_tier": "C",
+    "expected_signposts": ["compute_1e27"],
+    "expected_values": [1e27],
+    "rationale": "Compute exponent extraction (10^27)"
+  },
+  {
+    "id": "goldset_004",
+    "title": "WebArena success rate hits 70% milestone",
+    "summary": "Latest agentic system achieves 70.8% success on WebArena benchmark tasks.",
+    "evidence_tier": "B",
+    "expected_signposts": ["webarena_70"],
+    "expected_values": [70.8],
+    "rationale": "WebArena keyword + percentage at 70% threshold"
+  },
+  {
+    "id": "goldset_005",
+    "title": "OSWorld computer use benchmark reaches 50%",
+    "summary": "New multimodal agent achieves 50.2% on OSWorld tasks.",
+    "evidence_tier": "B",
+    "expected_signposts": ["osworld_50"],
+    "expected_values": [50.2],
+    "rationale": "OSWorld keyword + percentage"
+  },
+  {
+    "id": "goldset_006",
+    "title": "arXiv: Scaling Laws Beyond 10^26 FLOPs",
+    "summary": "Paper analyzes training dynamics at 10^26 FLOP scale, projecting continued improvements.",
+    "evidence_tier": "A",
+    "expected_signposts": ["compute_1e26"],
+    "expected_values": [1e26],
+    "rationale": "arXiv paper (A-tier) with 10^26 exponent"
+  },
+  {
+    "id": "goldset_007",
+    "title": "Datacenter announces 5 GW power capacity",
+    "summary": "New facility will provide 5 gigawatts of power for AI training.",
+    "evidence_tier": "C",
+    "expected_signposts": ["dc_power_10gw"],
+    "expected_values": [5.0],
+    "rationale": "Power extraction (5 GW) maps to 10gw signpost"
+  },
+  {
+    "id": "goldset_008",
+    "title": "Humanity's Last Exam: New model scores 55%",
+    "summary": "Latest LLM achieves 55% on HLE text-only subset.",
+    "evidence_tier": "B",
+    "expected_signposts": ["hle_text_50"],
+    "expected_values": [55.0],
+    "rationale": "HLE keyword + percentage above 50% threshold"
+  },
+  {
+    "id": "goldset_009",
+    "title": "Twitter rumor: GPT-6 in development",
+    "summary": "Unverified reports suggest next-generation model in training.",
+    "evidence_tier": "D",
+    "expected_signposts": [],
+    "expected_values": [],
+    "rationale": "D-tier social with no specific metrics - should not map"
+  },
+  {
+    "id": "goldset_010",
+    "title": "SWE-bench Verified leaderboard updated: 87% top score",
+    "summary": "Latest leaderboard shows top model at 87.3% on SWE-bench Verified.",
+    "evidence_tier": "A",
+    "expected_signposts": ["swe_bench_85"],
+    "expected_values": [87.3],
+    "rationale": "A-tier leaderboard + SWE-bench keyword + value > 85%"
+  },
+  {
+    "id": "goldset_011",
+    "title": "Weather forecast for next week",
+    "summary": "Sunny skies and mild temperatures expected.",
+    "evidence_tier": "C",
+    "expected_signposts": [],
+    "expected_values": [],
+    "rationale": "Unrelated content - should not map to any signposts"
+  },
+  {
+    "id": "goldset_012",
+    "title": "Multiple benchmarks improve: SWE-bench 86%, GPQA 74%",
+    "summary": "New model shows progress across multiple evaluations.",
+    "evidence_tier": "B",
+    "expected_signposts": ["swe_bench_85", "gpqa_75"],
+    "expected_values": [86.0, 74.0],
+    "rationale": "Multiple signpost mapping with distinct values"
+  },
+  {
+    "id": "goldset_013",
+    "title": "DeepMind agent achieves 82% reliability on multi-step tasks",
+    "summary": "New RL agent shows 82% success rate on complex multi-step planning benchmarks.",
+    "evidence_tier": "B",
+    "expected_signposts": ["agent_reliability_80"],
+    "expected_values": [82.0],
+    "rationale": "Agent reliability keyword with percentage above 80% threshold"
+  },
+  {
+    "id": "goldset_014",
+    "title": "100 Million H100 GPUs deployed for AI training",
+    "summary": "Industry sources report 100M H100-equivalent GPUs now in production clusters.",
+    "evidence_tier": "C",
+    "expected_signposts": ["dc_power_10gw"],
+    "expected_values": [],
+    "rationale": "GPU count maps to massive power requirements (10 GW signpost)"
+  },
+  {
+    "id": "goldset_015",
+    "title": "Algorithmic efficiency gains enable 100x compute multiplier",
+    "summary": "New training techniques provide 2 OOM improvement in effective compute.",
+    "evidence_tier": "A",
+    "expected_signposts": ["algo_efficiency_2oom"],
+    "expected_values": [100.0],
+    "rationale": "100x and 2 OOM keywords match algorithmic efficiency signpost"
+  },
+  {
+    "id": "goldset_016",
+    "title": "Model weights stolen in major security breach",
+    "summary": "Frontier lab reports exfiltration of model weights by nation-state actors.",
+    "evidence_tier": "B",
+    "expected_signposts": ["security_l1_weights"],
+    "expected_values": [],
+    "rationale": "Model theft/weight security keywords"
+  },
+  {
+    "id": "goldset_017",
+    "title": "Mandatory AI evaluations required for deployment",
+    "summary": "New regulation requires safety evals before production deployment.",
+    "evidence_tier": "B",
+    "expected_signposts": ["mandatory_evals"],
+    "expected_values": [],
+    "rationale": "Mandatory evaluation keywords"
+  },
+  {
+    "id": "goldset_018",
+    "title": "AI agents complete 3-day software projects autonomously",
+    "summary": "Demonstration shows AI completing multi-day projects with minimal human intervention.",
+    "evidence_tier": "B",
+    "expected_signposts": ["multi_day_project"],
+    "expected_values": [],
+    "rationale": "Multi-day project keywords"
+  },
+  {
+    "id": "goldset_019",
+    "title": "10% of remote knowledge workers displaced by AI",
+    "summary": "Labor market analysis shows 10% job displacement in cognitive tasks.",
+    "evidence_tier": "A",
+    "expected_signposts": ["economic_displacement_10pct"],
+    "expected_values": [10.0],
+    "rationale": "Economic displacement with 10% percentage"
+  },
+  {
+    "id": "goldset_020",
+    "title": "International AI Treaty ratified by G7 nations",
+    "summary": "Major powers agree on AI governance framework with binding commitments.",
+    "evidence_tier": "A",
+    "expected_signposts": ["ai_treaty_ratified"],
+    "expected_values": [],
+    "rationale": "AI treaty keywords in A-tier source"
+  },
+  {
+    "id": "goldset_021",
+    "title": "Inference monitoring deployed across all major labs",
+    "summary": "Runtime monitoring systems now standard for production AI deployments.",
+    "evidence_tier": "B",
+    "expected_signposts": ["security_l2_monitoring"],
+    "expected_values": [],
+    "rationale": "Inference/runtime monitoring keywords"
+  },
+  {
+    "id": "goldset_022",
+    "title": "New model achieves 65% on OSWorld computer automation",
+    "summary": "Latest agent reaches 65.3% success rate on OSWorld benchmark.",
+    "evidence_tier": "B",
+    "expected_signposts": ["osworld_65"],
+    "expected_values": [65.3],
+    "rationale": "OSWorld with 65% percentage threshold"
+  },
+  {
+    "id": "goldset_023",
+    "title": "WebArena agents hit 60% success rate",
+    "summary": "Web navigation agents achieve 60.1% on WebArena tasks.",
+    "evidence_tier": "B",
+    "expected_signposts": ["webarena_60"],
+    "expected_values": [60.1],
+    "rationale": "WebArena with 60% threshold"
+  },
+  {
+    "id": "goldset_024",
+    "title": "SWE-bench Verified: 72% performance on code generation",
+    "summary": "Code generation model achieves 72.4% on SWE-bench Verified benchmark.",
+    "evidence_tier": "A",
+    "expected_signposts": ["swe_bench_70"],
+    "expected_values": [72.4],
+    "rationale": "SWE-bench with 70%+ percentage"
+  },
+  {
+    "id": "goldset_025",
+    "title": "HLE text benchmark: 71% accuracy achieved",
+    "summary": "Model scores 71% on Humanity's Last Exam text-only questions.",
+    "evidence_tier": "B",
+    "expected_signposts": ["hle_text_70"],
+    "expected_values": [71.0],
+    "rationale": "HLE text with 70%+ percentage"
+  },
+  {
+    "id": "goldset_026",
+    "title": "Mixture of Experts model shows 2.5x efficiency gain",
+    "summary": "New MoE architecture provides 2.5 OOM improvement over dense models.",
+    "evidence_tier": "A",
+    "expected_signposts": ["algo_efficiency_2oom"],
+    "expected_values": [2.5],
+    "rationale": "MoE and efficiency gains map to algorithmic efficiency"
+  },
+  {
+    "id": "goldset_027",
+    "title": "Red team discovers jailbreak in frontier model",
+    "summary": "Adversarial testing reveals prompt injection vulnerability.",
+    "evidence_tier": "B",
+    "expected_signposts": ["security_l2_monitoring"],
+    "expected_values": [],
+    "rationale": "Red team and jailbreak keywords map to security monitoring"
+  },
+  {
+    "id": "goldset_028",
+    "title": "1 GW datacenter comes online for AI training",
+    "summary": "New facility provides 1 gigawatt of power capacity for model training.",
+    "evidence_tier": "B",
+    "expected_signposts": ["dc_power_1gw"],
+    "expected_values": [1.0],
+    "rationale": "1 GW datacenter power keyword"
+  },
+  {
+    "id": "goldset_029",
+    "title": "GPQA Diamond benchmark: Model achieves PhD parity at 82%",
+    "summary": "First model to match PhD-level performance on GPQA Diamond questions.",
+    "evidence_tier": "A",
+    "expected_signposts": ["gpqa_phd_parity"],
+    "expected_values": [82.0],
+    "rationale": "GPQA + PhD parity keywords"
+  },
+  {
+    "id": "goldset_030",
+    "title": "Scaling laws predict continued improvements through 2027",
+    "summary": "Analysis suggests power law scaling continues for 2 more orders of magnitude.",
+    "evidence_tier": "A",
+    "expected_signposts": ["algo_efficiency_2oom", "compute_1e26"],
+    "expected_values": [],
+    "rationale": "Scaling laws mention maps to both compute and algorithmic efficiency"
+  },
+  {
+    "id": "goldset_031",
+    "title": "AGI by 2027: Aschenbrenner's timeline analysis",
+    "summary": "Report outlines path to AGI within 2-3 years based on compute scaling.",
+    "evidence_tier": "C",
+    "expected_signposts": ["agent_reliability_80", "compute_1e27"],
+    "expected_values": [],
+    "rationale": "AGI mention maps to agent capabilities and compute milestones"
+  },
+  {
+    "id": "goldset_032",
+    "title": "Drop-in remote workers: AI employees now available",
+    "summary": "Companies offer AI agents as remote workers for cognitive tasks.",
+    "evidence_tier": "C",
+    "expected_signposts": ["agent_reliability_80", "economic_displacement_10pct"],
+    "expected_values": [],
+    "rationale": "Drop-in remote worker keywords map to agent reliability and displacement"
+  },
+  {
+    "id": "goldset_033",
+    "title": "Automated AI researchers achieve R&D breakthroughs",
+    "summary": "AI systems now contributing to frontier research with minimal human guidance.",
+    "evidence_tier": "B",
+    "expected_signposts": ["agent_reliability_80", "multi_day_project"],
+    "expected_values": [],
+    "rationale": "AI researcher keywords map to agent reliability and multi-day projects"
+  },
+  {
+    "id": "goldset_034",
+    "title": "Sparse models achieve 1000x compression ratio",
+    "summary": "New quantization and pruning techniques enable massive model compression.",
+    "evidence_tier": "A",
+    "expected_signposts": ["algo_efficiency_2oom"],
+    "expected_values": [1000.0],
+    "rationale": "Quantization, pruning, compression map to algorithmic efficiency"
+  },
+  {
+    "id": "goldset_035",
+    "title": "Export controls placed on advanced AI chips",
+    "summary": "National security restrictions now apply to frontier AI hardware.",
+    "evidence_tier": "B",
+    "expected_signposts": ["security_l1_weights"],
+    "expected_values": [],
+    "rationale": "Export controls and national security map to weight security"
+  },
+  {
+    "id": "goldset_036",
+    "title": "Safety standard framework adopted by industry",
+    "summary": "Major labs agree on unified safety evaluation framework.",
+    "evidence_tier": "B",
+    "expected_signposts": ["mandatory_evals"],
+    "expected_values": [],
+    "rationale": "Safety standard keywords map to mandatory evaluations"
+  },
+  {
+    "id": "goldset_037",
+    "title": "Chinchilla-optimal scaling shows 10^25 FLOP efficiency",
+    "summary": "Research demonstrates optimal compute allocation at 1e25 FLOP scale.",
+    "evidence_tier": "A",
+    "expected_signposts": ["compute_1e26"],
+    "expected_values": [1e25],
+    "rationale": "Chinchilla scaling law mentions with 10^25 FLOP"
+  },
+  {
+    "id": "goldset_038",
+    "title": "GPT-5 rumored for 2025 release",
+    "summary": "Unconfirmed reports suggest next-generation model in late 2025.",
+    "evidence_tier": "D",
+    "expected_signposts": [],
+    "expected_values": [],
+    "rationale": "D-tier rumor with no concrete metrics should not map"
+  },
+  {
+    "id": "goldset_039",
+    "title": "Long-horizon tasks: Agents complete week-long projects",
+    "summary": "Extended autonomous operation demonstrated over 7-day periods.",
+    "evidence_tier": "B",
+    "expected_signposts": ["multi_day_project"],
+    "expected_values": [],
+    "rationale": "Long-horizon and week-long keywords map to multi-day projects"
+  },
+  {
+    "id": "goldset_040",
+    "title": "Transformative AI projected within 5 years",
+    "summary": "Forecasting report predicts TAI by 2029 with 60% confidence.",
+    "evidence_tier": "C",
+    "expected_signposts": ["agent_reliability_80", "compute_1e27"],
+    "expected_values": [],
+    "rationale": "TAI mention maps to advanced agent capabilities and compute"
+  },
+  {
+    "id": "goldset_041",
+    "title": "Browser automation reaches 85% success on WebArena",
+    "summary": "Web agent achieves 85.2% on complex navigation tasks.",
+    "evidence_tier": "A",
+    "expected_signposts": ["webarena_85"],
+    "expected_values": [85.2],
+    "rationale": "WebArena with 85% threshold"
+  },
+  {
+    "id": "goldset_042",
+    "title": "OSWorld computer use: 85% milestone achieved",
+    "summary": "Multimodal agent reaches 85.1% success on OS-level tasks.",
+    "evidence_tier": "B",
+    "expected_signposts": ["osworld_85"],
+    "expected_values": [85.1],
+    "rationale": "OSWorld with 85% threshold"
+  },
+  {
+    "id": "goldset_043",
+    "title": "MMLU benchmark: 95% accuracy on multitask evaluation",
+    "summary": "Model achieves near-perfect performance on massive multitask benchmark.",
+    "evidence_tier": "A",
+    "expected_signposts": ["gpqa_75"],
+    "expected_values": [95.0],
+    "rationale": "MMLU maps to reasoning capabilities (gpqa_75)"
+  },
+  {
+    "id": "goldset_044",
+    "title": "HumanEval coding benchmark: 92% pass rate",
+    "summary": "Code generation model achieves 92% on HumanEval tasks.",
+    "evidence_tier": "A",
+    "expected_signposts": ["swe_bench_70"],
+    "expected_values": [92.0],
+    "rationale": "HumanEval maps to software engineering capabilities"
+  },
+  {
+    "id": "goldset_045",
+    "title": "Training cluster uses 10 petaflops sustained",
+    "summary": "New GPU cluster provides 10 petaflop compute capacity.",
+    "evidence_tier": "B",
+    "expected_signposts": ["compute_1e26"],
+    "expected_values": [],
+    "rationale": "Petaflop mention maps to compute milestones"
+  },
+  {
+    "id": "goldset_046",
+    "title": "Math benchmark shows 88% accuracy on advanced problems",
+    "summary": "Model demonstrates strong mathematical reasoning capabilities.",
+    "evidence_tier": "B",
+    "expected_signposts": ["gpqa_75"],
+    "expected_values": [88.0],
+    "rationale": "Math reasoning maps to gpqa_75 reasoning capabilities"
+  },
+  {
+    "id": "goldset_047",
+    "title": "Knowledge work automation reaches 15% displacement",
+    "summary": "Cognitive task automation now affects 15% of knowledge workers.",
+    "evidence_tier": "A",
+    "expected_signposts": ["economic_displacement_10pct"],
+    "expected_values": [15.0],
+    "rationale": "15% displacement exceeds 10% threshold"
+  },
+  {
+    "id": "goldset_048",
+    "title": "GPU training cluster energy costs exceed $100M annually",
+    "summary": "Power consumption for frontier training runs reaches unprecedented levels.",
+    "evidence_tier": "C",
+    "expected_signposts": ["dc_power_1gw"],
+    "expected_values": [],
+    "rationale": "Energy cost mention maps to datacenter power capacity"
+  },
+  {
+    "id": "goldset_049",
+    "title": "Effective compute doubles every 9 months",
+    "summary": "Analysis shows continued 9-month doubling time for effective compute.",
+    "evidence_tier": "A",
+    "expected_signposts": ["algo_efficiency_2oom"],
+    "expected_values": [],
+    "rationale": "9-month doubling maps to algorithmic efficiency gains"
+  },
+  {
+    "id": "goldset_050",
+    "title": "Autonomous coding agents deployed at Fortune 500 companies",
+    "summary": "Major enterprises now using AI software engineers for production code.",
+    "evidence_tier": "B",
+    "expected_signposts": ["swe_bench_85", "agent_reliability_80"],
+    "expected_values": [],
+    "rationale": "Autonomous coding maps to both SWE-bench and agent reliability"
+  }
+]

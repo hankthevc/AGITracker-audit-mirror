@@ -1,0 +1,124 @@
+/* AppShell - Sticky navigation with backdrop blur */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sticky, 1020);
+  backdrop-filter: saturate(130%) blur(8px);
+  background: color-mix(in oklab, var(--bg), transparent 18%);
+  border-bottom: 1px solid var(--border);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: var(--space-2);
+  height: 64px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--brand);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--brand), transparent 70%);
+}
+
+.nav {
+  display: flex;
+  gap: .25rem;
+}
+
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: .5rem .75rem;
+  border-radius: var(--radius-sm);
+  transition: color var(--dur-1) var(--ease-1), background var(--dur-1) var(--ease-1);
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: var(--text);
+  background: var(--surface-2);
+}
+
+.themeToggle {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, var(--surface), var(--surface-2));
+  box-shadow: var(--shadow-1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--dur-1) var(--ease-1), box-shadow var(--dur-1) var(--ease-1);
+}
+
+.themeToggle:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-2);
+}
+
+.themeToggle:active {
+  transform: scale(0.95);
+}
+
+.themeIcon {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  padding: var(--space-4) 0;
+  margin-top: var(--space-6);
+  color: var(--muted);
+}
+
+.footerContent {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  font-size: .9rem;
+  flex-wrap: wrap;
+}
+
+.footerContent a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color var(--dur-1) var(--ease-1);
+}
+
+.footerContent a:hover {
+  color: var(--text);
+}
+
+.footerDivider {
+  opacity: 0.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .row {
+    grid-template-columns: 1fr auto;
+  }
+  
+  .nav {
+    display: none; /* Mobile menu TBD */
+  }
+}
+

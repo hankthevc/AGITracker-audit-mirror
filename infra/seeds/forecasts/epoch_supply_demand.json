@@ -1,0 +1,55 @@
+{
+  "roadmap": "Epoch AI",
+  "author": "Epoch AI Research Team",
+  "source": "Compute Trends and Supply Chain Analysis",
+  "url": "https://epochai.org/",
+  "description": "Compute growth trends, hardware supply chains, and scaling projections",
+  "predictions": [
+    {
+      "signpost_code": "INP-R01",
+      "prediction_date": "2025-12-01",
+      "prediction_value": 1.0e26,
+      "prediction_text": "10^26 FLOP training runs become economically viable",
+      "confidence": 0.75
+    },
+    {
+      "signpost_code": "INP-R02",
+      "prediction_date": "2027-06-01",
+      "prediction_value": 1.0e27,
+      "prediction_text": "10^27 FLOP milestone reached, following historical doubling trends",
+      "confidence": 0.65
+    },
+    {
+      "signpost_code": "INP-R04",
+      "prediction_date": "2026-01-01",
+      "prediction_text": "Major datacenter expansions by leading AI labs",
+      "confidence": 0.8
+    },
+    {
+      "signpost_code": "INP-R05",
+      "prediction_date": "2026-06-01",
+      "prediction_value": 3.0,
+      "prediction_text": "3 GW+ datacenters become operational for frontier training",
+      "confidence": 0.7
+    },
+    {
+      "signpost_code": "INP-R06",
+      "prediction_date": "2025-06-01",
+      "prediction_text": "Chinchilla scaling laws continue to hold for compute-optimal training",
+      "confidence": 0.8
+    },
+    {
+      "signpost_code": "INP-R07",
+      "prediction_date": "2026-01-01",
+      "prediction_text": "1 OOM algorithmic efficiency gains through architectural improvements",
+      "confidence": 0.6
+    },
+    {
+      "signpost_code": "CAP-R01",
+      "prediction_date": "2026-06-01",
+      "prediction_text": "Code generation benchmarks reaching 90%+ as compute scales",
+      "confidence": 0.7
+    }
+  ]
+}
+

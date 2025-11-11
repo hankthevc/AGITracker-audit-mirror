@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Rumor: GPT-5 to launch Q4 2025",
+    "summary": "Unconfirmed reports on Twitter suggest OpenAI planning GPT-5 release in Q4 2025 with major capability improvements.",
+    "url": "https://twitter.com/user/status/123456",
+    "publisher": "Twitter",
+    "author": "@aiinsider",
+    "published_at": "2025-10-13T18:00:00Z"
+  },
+  {
+    "title": "Reddit discusses SWE-bench 90% threshold",
+    "summary": "Reddit r/MachineLearning: Discussion thread on theoretical timeline to 90%+ SWE-bench performance.",
+    "url": "https://reddit.com/r/MachineLearning/comments/xyz",
+    "publisher": "Reddit",
+    "published_at": "2025-10-10T20:00:00Z"
+  }
+]
+

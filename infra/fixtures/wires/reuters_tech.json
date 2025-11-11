@@ -1,0 +1,27 @@
+[
+  {
+    "title": "OpenAI Announces 100 Million H100 GPU Cluster for AGI Training",
+    "summary": "OpenAI CEO Sam Altman announced today that the company has secured 100 million NVIDIA H100 GPUs for a massive training cluster, with total power consumption expected to reach 5 GW.",
+    "url": "https://reuters.com/technology/openai-100m-h100-cluster-2025-10-14",
+    "published_at": "2025-10-14T14:30:00Z",
+    "author": "Jane Reporter",
+    "outlet": "Reuters"
+  },
+  {
+    "title": "Google DeepMind's New Model Achieves Human-Level Performance on GPQA Diamond",
+    "summary": "Google DeepMind announced Gemini 3 Ultra today, claiming it achieves 89% on GPQA Diamond, matching expert-level performance on graduate physics questions.",
+    "url": "https://reuters.com/technology/deepmind-gemini-3-gpqa-2025-10-13",
+    "published_at": "2025-10-13T10:15:00Z",
+    "author": "John News",
+    "outlet": "Reuters"
+  },
+  {
+    "title": "White House Announces Mandatory AI Safety Audits for Frontier Models",
+    "summary": "The Biden administration unveiled new regulations requiring third-party security audits and attestation for AI systems trained with more than 10^26 FLOPs.",
+    "url": "https://reuters.com/politics/ai-safety-audits-mandate-2025-10-12",
+    "published_at": "2025-10-12T16:00:00Z",
+    "author": "Sarah Political",
+    "outlet": "Reuters"
+  }
+]
+

@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Introducing GPT-5: Our Most Capable Model Yet",
+    "summary": "Today we're releasing GPT-5, which achieves state-of-the-art results across multiple benchmarks including 95% on SWE-bench Verified, 89% on MMLU, and 94% on HumanEval.",
+    "url": "https://openai.com/blog/gpt-5-launch",
+    "published_at": "2025-10-10T17:00:00Z",
+    "author": "OpenAI Team"
+  },
+  {
+    "title": "Scaling to 10^27 FLOPs: Lessons from Our Largest Training Run",
+    "summary": "We share insights from training our largest model to date, using 10^27 FLOPs of compute. This represents a 10x scale-up from our previous generation.",
+    "url": "https://openai.com/research/scaling-10e27-flops",
+    "published_at": "2025-10-05T14:00:00Z",
+    "author": "OpenAI Research"
+  }
+]
+

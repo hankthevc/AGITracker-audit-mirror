@@ -1,0 +1,10 @@
+runtime.txt
+*.pyc
+__pycache__/
+.pytest_cache/
+.env
+.env.local
+*.egg-info/
+.venv/
+venv/
+

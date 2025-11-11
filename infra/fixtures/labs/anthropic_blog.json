@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Claude 4 and Enhanced Constitutional AI",
+    "summary": "We're excited to announce Claude 4, trained with improved safety alignment techniques. The model shows strong performance on reasoning tasks while maintaining robust safety properties.",
+    "url": "https://anthropic.com/blog/claude-4-release",
+    "published_at": "2025-10-11T10:00:00Z",
+    "author": "Anthropic Safety Team"
+  },
+  {
+    "title": "Weight Security Best Practices: Protecting Frontier Models",
+    "summary": "We're sharing our approach to model weight security, including hardware security modules (HSMs) and secure enclaves for protecting model parameters.",
+    "url": "https://anthropic.com/blog/weight-security-practices",
+    "published_at": "2025-10-03T15:30:00Z",
+    "author": "Anthropic Security"
+  }
+]
+

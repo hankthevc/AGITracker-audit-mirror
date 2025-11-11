@@ -1,0 +1,29 @@
+[
+  {
+    "id": "2406.04744",
+    "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+    "authors": ["Carlos E. Jimenez", "John Yang", "et al."],
+    "summary": "We introduce SWE-bench, a benchmark for evaluating large language models on real-world software engineering tasks. The benchmark consists of 2,294 tasks from 12 popular Python repositories.",
+    "published": "2024-06-07T00:00:00Z",
+    "link": "https://arxiv.org/abs/2406.04744",
+    "categories": ["cs.SE", "cs.AI"]
+  },
+  {
+    "id": "2404.07143",
+    "title": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+    "authors": ["Tianbao Xie", "Danyang Zhang", "et al."],
+    "summary": "We present OSWorld, a scalable real computer environment for multimodal agents to demonstrate human-level computer skills across various operating systems.",
+    "published": "2024-04-10T00:00:00Z",
+    "link": "https://arxiv.org/abs/2404.07143",
+    "categories": ["cs.AI", "cs.HC"]
+  },
+  {
+    "id": "2307.13854",
+    "title": "WebArena: A Realistic Web Environment for Building Autonomous Agents",
+    "authors": ["Shuyan Zhou", "Frank F. Xu", "et al."],
+    "summary": "We introduce WebArena, an environment for testing autonomous agents on complex web-based tasks. We benchmark several LLM-based agents and find that GPT-4 achieves 14.41% end-to-end task success.",
+    "published": "2023-07-25T00:00:00Z",
+    "link": "https://arxiv.org/abs/2307.13854",
+    "categories": ["cs.AI", "cs.CL"]
+  }
+]

@@ -1,0 +1,92 @@
+# Signpost Citations and Detailed Descriptions
+# Source material for each AGI signpost with academic citations
+
+capabilities_benchmarks:
+  swe_bench_85:
+    name: "SWE-bench Verified ≥85%"
+    description: "AI system achieves 85% success rate on SWE-bench Verified, a benchmark of real-world software engineering tasks from GitHub pull requests."
+    why_matters: "Software engineering is a core economically valuable skill. Automating the majority of GitHub issue resolution would demonstrate transformative AI capabilities in a high-value domain."
+    source_paper: "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?"
+    source_url: "https://arxiv.org/abs/2310.06770"
+    citation: "Jimenez et al., 2024"
+    methodology: "2,294 task instances from 12 popular Python repositories. Tasks require understanding code context, generating patches, and passing unit tests."
+    baseline_sota: "As of Oct 2024: ~50-65% (varies by model)"
+    target_rationale: "85% represents majority automation of real-world software engineering tasks"
+    
+  osworld_65:
+    name: "OSWorld ≥65%"
+    description: "AI achieves 65% on OSWorld, a benchmark for complex operating system-level tasks requiring multi-step reasoning and tool use."
+    why_matters: "General computer use is a prerequisite for autonomous AI agents that can perform any digital task. OSWorld tests real OS interaction across Linux, Windows, and macOS."
+    source_paper: "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments"
+    source_url: "https://arxiv.org/abs/2404.07143"
+    citation: "Xie et al., 2024"
+    methodology: "369 computer tasks across real operating systems with GUI and command-line interaction. Tasks span file management, web browsing, and application use."
+    baseline_sota: "As of Oct 2024: ~15-30%"
+    target_rationale: "65% demonstrates reliable computer use capabilities approaching human proficiency"
+    
+  webarena_70:
+    name: "WebArena ≥70%"
+    description: "AI achieves 70% on WebArena, a benchmark for autonomous web navigation and task completion."
+    why_matters: "Web interaction is essential for AI agents to access information and complete tasks in the modern digital economy. WebArena tests realistic web usage patterns."
+    source_paper: "WebArena: A Realistic Web Environment for Building Autonomous Agents"
+    source_url: "https://arxiv.org/abs/2307.13854"
+    citation: "Zhou et al., 2023"
+    methodology: "812 web-based tasks across e-commerce, social forums, collaborative software, and content management systems. Requires multi-step planning and form interaction."
+    baseline_sota: "As of Oct 2024: ~35-50%"
+    target_rationale: "70% indicates robust web automation capabilities suitable for economic deployment"
+    
+  gpqa_75:
+    name: "GPQA Diamond ≥75%"
+    description: "AI achieves 75% on GPQA Diamond, a benchmark of PhD-level scientific reasoning questions across physics, biology, and chemistry."
+    why_matters: "Graduate-level scientific reasoning tests AI's ability to handle complex domain knowledge and multi-step problem solving. GPQA is designed to be resistant to memorization."
+    source_paper: "GPQA: A Graduate-Level Google-Proof Q&A Benchmark"
+    source_url: "https://arxiv.org/abs/2311.12022"
+    citation: "Rein et al., 2023"
+    methodology: "448 multiple-choice questions written by domain experts. Questions require deep scientific knowledge and are validated to be unsolvable by web search alone."
+    baseline_sota: "As of Oct 2024: ~55-70%"
+    target_rationale: "75% approaches PhD expert performance, indicating transformative research capabilities"
+
+inputs_compute:
+  inputs_flops_26:
+    name: "Training Compute 10^26 FLOP"
+    description: "Single AI training run reaches 10^26 floating point operations, representing a key scaling milestone."
+    why_matters: "Compute scaling has been the primary driver of AI capabilities since 2012. 10^26 FLOP represents ~100x scaling from GPT-3 era models."
+    source_paper: "Scaling Laws for Neural Language Models"
+    source_url: "https://arxiv.org/abs/2001.08361"
+    citation: "Kaplan et al., 2020"
+    methodology: "Empirical study of loss as a function of model size, dataset size, and compute. Predicts performance improvements from scaling."
+    baseline: "GPT-3 (2020): ~3.1×10^23 FLOP"
+    target_rationale: "10^26 FLOP enables models 300x larger than GPT-3, likely unlocking qualitatively new capabilities"
+    
+  inputs_flops_27:
+    name: "Training Compute 10^27 FLOP"
+    description: "Single AI training run reaches 10^27 floating point operations."
+    why_matters: "10^27 FLOP represents another 10x scaling beyond 10^26, potentially reaching biological anchors estimates for transformative AI."
+    source_paper: "Biological Anchors: A New Method to Estimate When Transformative AI Will Arrive"
+    source_url: "https://www.openphilanthropy.org/research/draft-report-on-ai-timelines/"
+    citation: "Cotra, 2020 (updated 2022)"
+    methodology: "Anchors AI compute requirements to biological evolution and brain computation. 10^27 FLOP falls within medium estimates for TAI."
+    target_rationale: "Crosses biological anchors threshold for human-level learning efficiency"
+
+security:
+  security_l2_monitoring:
+    name: "Security Level 2: Inference Monitoring"
+    description: "Deployment of inference-time monitoring systems to detect misuse of frontier AI models."
+    why_matters: "As AI capabilities advance, real-time monitoring becomes critical for preventing misuse while preserving beneficial uses."
+    source_paper: "Safeguarding AI Systems: The Importance of Monitoring and Response"
+    source_url: "https://cdn.openai.com/papers/practices-for-governing-agentic-ai-systems.pdf"
+    citation: "OpenAI Preparedness Framework, 2023"
+    methodology: "Continuous monitoring of model usage patterns, automated flagging of high-risk queries, human review processes."
+    target_rationale: "Industry-wide adoption of inference monitoring represents mature security posture"
+
+monitor_only:
+  hle_text_50:
+    name: "HLE Text ≥50% (Monitor-Only)"
+    description: "AI achieves 50% on Humanity's Last Exam text-only subset. Currently monitor-only due to known label quality issues in Bio/Chem."
+    why_matters: "HLE tests breadth of PhD-level knowledge across many domains. Provides long-horizon indicator but has known quality issues."
+    source_url: "https://scale.com/leaderboard/hle"
+    source_org: "Scale AI"
+    quality_note: "Biology and Chemistry subsets have documented labeling inconsistencies. Currently B-tier (Provisional) evidence only."
+    first_class: false
+    monitor_rationale: "Will upgrade to first-class when: (1) A-tier peer-reviewed validation published, OR (2) Scale AI publishes quality remediation report"
+    expected_upgrade: "2026-2028 timeframe"

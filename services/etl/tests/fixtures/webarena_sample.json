@@ -1,0 +1,23 @@
+{
+  "benchmark": "WebArena",
+  "leaderboard_data": [
+    {
+      "model": "GPT-4",
+      "task_success_rate": 35.3,
+      "date": "2023-12"
+    },
+    {
+      "model": "Claude-3-Opus",
+      "task_success_rate": 41.7,
+      "date": "2024-03"
+    }
+  ],
+  "visualwebarena_data": [
+    {
+      "model": "GPT-4V",
+      "task_success_rate": 28.9,
+      "date": "2024-01"
+    }
+  ]
+}
+

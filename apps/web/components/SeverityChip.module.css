@@ -1,0 +1,41 @@
+/* SeverityChip - Color-coded incident severity */
+
+.chip {
+  --bgc: var(--surface-2);
+  --fg: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  font: 600 .8rem/1 var(--font-sans);
+  padding: .35rem .6rem;
+  border-radius: 999px;
+  background: var(--bgc);
+  color: var(--fg);
+  border: 1px solid var(--border);
+}
+
+.chip[data-severity="1"] {
+  --bgc: color-mix(in oklab, var(--good), transparent 80%);
+  --fg: var(--good);
+  border-color: color-mix(in oklab, var(--good), transparent 60%);
+}
+
+.chip[data-severity="3"] {
+  --bgc: color-mix(in oklab, var(--warn), transparent 82%);
+  --fg: var(--warn);
+  border-color: color-mix(in oklab, var(--warn), transparent 60%);
+}
+
+.chip[data-severity="4"] {
+  --bgc: color-mix(in oklab, var(--bad), transparent 85%);
+  --fg: var(--bad);
+  border-color: color-mix(in oklab, var(--bad), transparent 60%);
+}
+
+.chip[data-severity="5"] {
+  --bgc: color-mix(in oklab, var(--bad), transparent 82%);
+  --fg: var(--bad);
+  border-color: var(--bad);
+  font-weight: 700;
+}
+

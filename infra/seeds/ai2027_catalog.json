@@ -1,0 +1,127 @@
+{
+  "roadmap": "AI 2027",
+  "description": "Predicted AGI signposts based on AI 2027 scenario timeline",
+  "predictions": [
+    {
+      "id": "ai2027_swe_70",
+      "label": "Agentic Coding 70%",
+      "signpost_code": "swe_bench_85",
+      "target_date": "2025-06",
+      "confidence": 0.7,
+      "rationale": "AI 2027 predicts autonomous coding agents achieving 70%+ on real-world GitHub issues by mid-2025"
+    },
+    {
+      "id": "ai2027_swe_85",
+      "label": "Agentic Coding 85%",
+      "signpost_code": "swe_bench_90",
+      "target_date": "2026-03",
+      "confidence": 0.6,
+      "rationale": "Near-human expert performance on software engineering benchmarks expected by early 2026"
+    },
+    {
+      "id": "ai2027_osworld_65",
+      "label": "OS-Level Tasks 65%",
+      "signpost_code": "osworld_65",
+      "target_date": "2025-09",
+      "confidence": 0.65,
+      "rationale": "Complex OS-level task automation reaching 65% success by late 2025"
+    },
+    {
+      "id": "ai2027_osworld_85",
+      "label": "OS-Level Tasks 85%",
+      "signpost_code": "osworld_85",
+      "target_date": "2026-06",
+      "confidence": 0.5,
+      "rationale": "Near-human proficiency on OS tasks projected for mid-2026"
+    },
+    {
+      "id": "ai2027_webarena_70",
+      "label": "Web Navigation 70%",
+      "signpost_code": "webarena_70",
+      "target_date": "2025-12",
+      "confidence": 0.6,
+      "rationale": "Autonomous web navigation and task completion reaching 70% by end of 2025"
+    },
+    {
+      "id": "ai2027_gpqa_75",
+      "label": "PhD-Level Science 75%",
+      "signpost_code": "gpqa_sota",
+      "target_date": "2025-12",
+      "confidence": 0.65,
+      "rationale": "PhD-level science question answering at 75% accuracy by end of 2025"
+    },
+    {
+      "id": "ai2027_gpqa_85",
+      "label": "PhD Expert Parity",
+      "signpost_code": "gpqa_phd_parity",
+      "target_date": "2026-09",
+      "confidence": 0.5,
+      "rationale": "Reaching PhD expert parity (85%) on GPQA Diamond by late 2026"
+    },
+    {
+      "id": "ai2027_agent_reliability",
+      "label": "Multi-step Agent 80%",
+      "signpost_code": "agent_reliability_80",
+      "target_date": "2026-03",
+      "confidence": 0.6,
+      "rationale": "Reliable multi-step task completion by autonomous agents reaching 80% by early 2026"
+    },
+    {
+      "id": "ai2027_flops_26",
+      "label": "1e26 FLOP Training Run",
+      "signpost_code": "inputs_flops_26",
+      "target_date": "2025-03",
+      "confidence": 0.8,
+      "rationale": "First 1e26 FLOP training run expected by early 2025 (already achieved or imminent)"
+    },
+    {
+      "id": "ai2027_flops_27",
+      "label": "1e27 FLOP Training Run",
+      "signpost_code": "inputs_flops_27",
+      "target_date": "2026-06",
+      "confidence": 0.7,
+      "rationale": "Scaling to 1e27 FLOPs projected for mid-2026 based on current buildout"
+    },
+    {
+      "id": "ai2027_dc_1gw",
+      "label": "1 GW Datacenter",
+      "signpost_code": "inputs_dc_1gw",
+      "target_date": "2025-12",
+      "confidence": 0.75,
+      "rationale": "First 1 GW AI datacenter cluster expected by end of 2025 (xAI, Meta commitments)"
+    },
+    {
+      "id": "ai2027_dc_10gw",
+      "label": "10 GW Datacenter",
+      "signpost_code": "inputs_dc_10gw",
+      "target_date": "2027-12",
+      "confidence": 0.6,
+      "rationale": "10 GW clusters projected for 2027-2028 timeframe based on infrastructure plans"
+    },
+    {
+      "id": "ai2027_algo_2oom",
+      "label": "+2 OOM Algorithmic Efficiency",
+      "signpost_code": "algo_efficiency_2oom",
+      "target_date": "2025-09",
+      "confidence": 0.65,
+      "rationale": "100x improvement over 2020 baseline expected by late 2025 (9-month doubling)"
+    },
+    {
+      "id": "ai2027_security_l2",
+      "label": "Security Level 2",
+      "signpost_code": "security_l2_monitoring",
+      "target_date": "2026-03",
+      "confidence": 0.5,
+      "rationale": "Inference monitoring deployment expected by early 2026 as capabilities advance"
+    },
+    {
+      "id": "ai2027_job_displacement",
+      "label": "10% Job Displacement",
+      "signpost_code": "economic_displacement_10pct",
+      "target_date": "2026-12",
+      "confidence": 0.55,
+      "rationale": "Economic displacement of 10% of remote knowledge work projected for late 2026"
+    }
+  ]
+}
+

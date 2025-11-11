@@ -1,0 +1,85 @@
+/**
+ * Chart Theming - Unified visual system for all data visualizations
+ * Works with Recharts, D3, or any SVG-based charting library
+ */
+
+.chart {
+  --ink: var(--text);
+  --grid: color-mix(in oklab, var(--text), transparent 85%);
+  --axis: color-mix(in oklab, var(--text), transparent 40%);
+  --label: var(--muted);
+}
+
+/* Grid lines */
+.chart .grid line {
+  stroke: var(--grid);
+  stroke-width: 1;
+}
+
+/* Axes */
+.chart .axis path,
+.chart .axis line {
+  stroke: var(--axis);
+  stroke-width: 1;
+}
+
+.chart .axis text {
+  fill: var(--label);
+  font: .85rem var(--font-sans);
+}
+
+/* Annotations */
+.chart .annotation {
+  fill: var(--ink);
+  font: .9rem var(--font-sans);
+}
+
+/* Chart-specific color assignments */
+.chart .line-1 { stroke: var(--chart-1); }
+.chart .line-2 { stroke: var(--chart-2); }
+.chart .line-3 { stroke: var(--chart-3); }
+.chart .line-4 { stroke: var(--chart-4); }
+.chart .line-5 { stroke: var(--chart-5); }
+.chart .line-6 { stroke: var(--chart-6); }
+.chart .line-7 { stroke: var(--chart-7); }
+.chart .line-8 { stroke: var(--chart-8); }
+
+.chart .fill-1 { fill: var(--chart-1); }
+.chart .fill-2 { fill: var(--chart-2); }
+.chart .fill-3 { fill: var(--chart-3); }
+.chart .fill-4 { fill: var(--chart-4); }
+.chart .fill-5 { fill: var(--chart-5); }
+.chart .fill-6 { fill: var(--chart-6); }
+.chart .fill-7 { fill: var(--chart-7); }
+.chart .fill-8 { fill: var(--chart-8); }
+
+/* Tooltips */
+.chart .tooltip {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2);
+  box-shadow: var(--shadow-2);
+  font-size: .9rem;
+}
+
+/* Legend */
+.chart .legend {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  font-size: .85rem;
+}
+
+.chart .legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+.chart .legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+

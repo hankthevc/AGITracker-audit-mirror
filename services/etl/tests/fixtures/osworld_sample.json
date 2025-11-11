@@ -1,0 +1,18 @@
+{
+  "benchmark": "OSWorld-Verified",
+  "leaderboard_data": [
+    {
+      "model": "GPT-4o",
+      "task_success_rate": 72.4,
+      "date": "2024-09",
+      "verified": true
+    },
+    {
+      "model": "Claude-3.5-Sonnet",
+      "task_success_rate": 68.1,
+      "date": "2024-10",
+      "verified": true
+    }
+  ]
+}
+

@@ -1,0 +1,1145 @@
+capabilities:
+- code: swe_bench_85
+  name: SWE-bench Verified ≥85%
+  description: AI achieves 85% on SWE-bench Verified (real GitHub PRs)
+  category: capabilities
+  baseline_value: 0.48
+  target_value: 0.85
+  metric_name: SWE-bench Verified
+  unit: '%'
+  direction: '>='
+  first_class: true
+  why_matters: Software engineering automation - economically critical skill. 85%
+    represents majority automation of real-world coding tasks.
+  measurement_methodology: Official SWE-bench leaderboard, verified subset only
+  measurement_source: https://www.swebench.com/leaderboard
+  measurement_frequency: weekly
+  verification_tier: A-tier
+  current_sota_value: 0.5
+  current_sota_model: Claude 3.5 Sonnet
+  current_sota_date: '2024-10-30'
+  aschenbrenner_timeline: '2027-06-01'
+  aschenbrenner_confidence: 0.7
+  aschenbrenner_quote: AI will be able to do the work of an AI researcher/engineer
+    by 2027
+  aschenbrenner_rationale: Situational Awareness pg 45-47 implies near-human coding
+    by mid-2027
+  ai2027_timeline: '2026-12-01'
+  ai2027_confidence: 0.6
+  epoch_timeline: '2026-06-01'
+  epoch_confidence: 0.7
+  primary_paper_title: 'SWE-bench: Can Language Models Resolve Real-World GitHub Issues?'
+  primary_paper_url: https://arxiv.org/abs/2310.06770
+  primary_paper_authors: Jimenez et al.
+  primary_paper_year: 2024
+  related_signpost_codes: swe_bench_90,superhuman_coding
+  display_order: 1
+- code: swe_bench_90
+  name: SWE-bench Verified ≥90%
+  description: AI achieves 90% on SWE-bench Verified (near-human expert level)
+  category: capabilities
+  baseline_value: 0.48
+  target_value: 0.9
+  metric_name: SWE-bench Verified
+  unit: '%'
+  direction: '>='
+  first_class: true
+  why_matters: 90% represents human expert-level performance, indicating AI can replace
+    (not just assist) software engineers.
+  measurement_methodology: Official SWE-bench leaderboard
+  measurement_source: https://www.swebench.com/leaderboard
+  aschenbrenner_timeline: '2027-09-01'
+  aschenbrenner_confidence: 0.65
+  ai2027_timeline: '2027-03-01'
+  display_order: 2
+- code: osworld_65
+  name: OSWorld ≥65%
+  description: AI achieves 65% on OSWorld (complex OS-level tasks)
+  category: capabilities
+  baseline_value: 0.15
+  target_value: 0.65
+  unit: '%'
+  direction: '>='
+  first_class: true
+  why_matters: General computer use prerequisite for autonomous agents. Tests real
+    OS interaction across Linux, Windows, macOS.
+  measurement_source: https://os-world.github.io/
+  current_sota_value: 0.25
+  current_sota_date: '2024-10-01'
+  ai2027_timeline: '2027-06-01'
+  ai2027_confidence: 0.55
+  primary_paper_url: https://arxiv.org/abs/2404.07143
+  primary_paper_authors: Xie et al.
+  primary_paper_year: 2024
+  display_order: 3
+- code: webarena_70
+  name: WebArena ≥70%
+  description: AI achieves 70% on WebArena (web navigation and task completion)
+  category: capabilities
+  baseline_value: 0.35
+  target_value: 0.7
+  unit: '%'
+  direction: '>='
+  first_class: true
+  why_matters: Web interaction essential for AI agents. WebArena tests realistic web
+    usage patterns.
+  current_sota_value: 0.45
+  ai2027_timeline: '2026-12-01'
+  primary_paper_url: https://arxiv.org/abs/2307.13854
+  display_order: 4
+- code: gpqa_phd_parity
+  name: GPQA Diamond ≥75% (PhD Parity)
+  description: AI achieves 75% on GPQA Diamond (PhD-level scientific reasoning)
+  category: capabilities
+  baseline_value: 0.45
+  target_value: 0.75
+  unit: '%'
+  direction: '>='
+  first_class: true
+  why_matters: Graduate-level scientific reasoning. GPQA is designed to resist memorization,
+    tests genuine understanding.
+  measurement_source: https://github.com/idavidrein/gpqa
+  current_sota_value: 0.65
+  aschenbrenner_timeline: '2026-12-01'
+  aschenbrenner_confidence: 0.65
+  primary_paper_url: https://arxiv.org/abs/2311.12022
+  primary_paper_authors: Rein et al.
+  primary_paper_year: 2023
+  display_order: 5
+- code: ai_researcher_demo
+  name: Automated AI Researcher
+  description: 'AI independently conducts AI research: hypothesis, experiments, analysis,
+    paper writing'
+  category: capabilities
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  direction: '>='
+  first_class: true
+  why_matters: RECURSIVE IMPROVEMENT. If AI can do AI research, progress becomes self-sustaining.
+    Aschenbrenner's key inflection point.
+  measurement_methodology: Peer-reviewed AI paper with AI as primary researcher
+  verification_tier: A-tier (NeurIPS, ICML, ICLR publication)
+  aschenbrenner_timeline: '2027-03-01'
+  aschenbrenner_confidence: 0.65
+  aschenbrenner_quote: The jump to AI systems that can automate AI research will be
+    the most important event
+  aschenbrenner_rationale: Unhobbling + compute scaling enables AI researchers by
+    late 2026-early 2027
+  prerequisite_codes: swe_bench_90,agent_reliability_80,compute_1e26
+  display_order: 6
+- code: superhuman_coding
+  name: Superhuman Coding (Better than Median SWE)
+  description: AI outperforms median software engineer across ALL coding tasks
+  category: capabilities
+  baseline_value: 0.6
+  target_value: 1.0
+  unit: relative to median SWE
+  direction: '>='
+  first_class: true
+  why_matters: Drop-in remote worker threshold. Economic transformative AI for knowledge
+    work.
+  measurement_methodology: 'Composite: SWE-bench 90%+, Codeforces Gold, speed, bug
+    rates'
+  aschenbrenner_timeline: '2027-06-01'
+  aschenbrenner_confidence: 0.65
+  aschenbrenner_quote: By 2027, AI will be better than median remote software engineers
+  related_signpost_codes: swe_bench_90,codeforces_gold
+  display_order: 7
+- code: codeforces_gold
+  name: Codeforces Gold Medal
+  description: AI achieves Gold medal (top 1%) on Codeforces competitive programming
+  category: capabilities
+  baseline_value: 0.2
+  target_value: 0.9
+  unit: percentile
+  direction: '>='
+  first_class: true
+  why_matters: Tests raw algorithmic thinking beyond code generation. Gold = better
+    than 99% of competitive programmers.
+  measurement_source: https://codeforces.com/
+  current_sota_value: 0.35
+  current_sota_model: AlphaCode 2
+  aschenbrenner_timeline: '2026-06-01'
+  display_order: 8
+- code: arc_agi_85
+  name: ARC-AGI ≥85%
+  description: AI achieves 85% on ARC (Abstraction and Reasoning Corpus)
+  category: capabilities
+  baseline_value: 0.35
+  target_value: 0.85
+  unit: '%'
+  direction: '>='
+  first_class: true
+  why_matters: Tests few-shot generalization and abstract reasoning - what current
+    LLMs struggle with. High performance = genuine reasoning.
+  measurement_source: https://arcprize.org/
+  current_sota_value: 0.35
+  display_order: 9
+- code: math_500_95
+  name: MATH-500 ≥95%
+  description: AI achieves 95% on MATH-500 (competition mathematics)
+  category: capabilities
+  baseline_value: 0.5
+  target_value: 0.95
+  unit: '%'
+  direction: '>='
+  first_class: false
+  measurement_source: MATH dataset (Hendrycks et al.)
+  current_sota_value: 0.9
+  current_sota_model: OpenAI o1
+  display_order: 10
+- code: usmle_90
+  name: USMLE Step 2 ≥90%
+  description: AI achieves 90% on USMLE (clinical medical knowledge)
+  category: capabilities
+  baseline_value: 0.7
+  target_value: 0.9
+  unit: '%'
+  direction: '>='
+  first_class: false
+  why_matters: Medical diagnosis tests specialized knowledge + reasoning in high-stakes
+    domain.
+  current_sota_value: 0.86
+  current_sota_model: GPT-4
+  display_order: 11
+- code: novel_discovery_demo
+  name: Novel Scientific Discovery
+  description: AI independently discovers novel scientific finding, peer-reviewed
+  category: capabilities
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  direction: '>='
+  first_class: true
+  why_matters: Scientific acceleration. If AI can discover, every domain gets AI-powered
+    progress.
+  verification_tier: A-tier (Nature, Science, Cell publication)
+  aschenbrenner_timeline: '2027-06-01'
+  aschenbrenner_confidence: 0.5
+  aschenbrenner_rationale: After automated AI researchers
+  prerequisite_codes: ai_researcher_demo
+  display_order: 12
+- code: osworld_85
+  name: OSWorld ≥85%
+  category: capabilities
+  baseline_value: 0.15
+  target_value: 0.85
+  first_class: true
+  display_order: 13
+  direction: '>='
+- code: webarena_85
+  name: WebArena ≥85%
+  category: capabilities
+  baseline_value: 0.35
+  target_value: 0.85
+  first_class: true
+  display_order: 14
+  direction: '>='
+- code: gpqa_sota
+  name: GPQA Diamond SOTA
+  category: capabilities
+  baseline_value: 0.25
+  target_value: 0.95
+  first_class: true
+  display_order: 15
+  direction: '>='
+- code: hle_text_50
+  name: HLE Text ≥50% (Monitor-Only)
+  description: Humanity's Last Exam text subset (monitor-only due to quality issues)
+  category: capabilities
+  baseline_value: 0.3
+  target_value: 0.5
+  first_class: false
+  why_matters: PhD-level knowledge breadth. Monitor-only due to known Bio/Chem label
+    quality issues.
+  measurement_source: https://scale.com/leaderboard/hle
+  display_order: 16
+  direction: '>='
+- code: hle_text_70
+  name: HLE Text ≥70%
+  category: capabilities
+  baseline_value: 0.3
+  target_value: 0.7
+  first_class: false
+  display_order: 17
+  direction: '>='
+- code: turing_test_pass
+  name: Turing Test (Broad Protocol)
+  description: AI fools 95% of judges in 30+ minute conversations
+  category: capabilities
+  baseline_value: 0.65
+  target_value: 0.95
+  unit: '%'
+  first_class: false
+  display_order: 18
+  direction: '>='
+agents:
+- code: agent_reliability_80
+  name: Multi-step Agent Reliability 80%
+  description: AI agents successfully complete 80% of multi-hour tasks
+  category: agents
+  baseline_value: 0.4
+  target_value: 0.8
+  unit: '%'
+  first_class: true
+  why_matters: Reliability threshold for economic deployment. Below 80%, too error-prone
+    for production.
+  aschenbrenner_timeline: '2026-09-01'
+  aschenbrenner_confidence: 0.7
+  ai2027_timeline: '2026-06-01'
+  ai2027_confidence: 0.65
+  display_order: 1
+  direction: '>='
+- code: multi_day_project
+  name: Multi-day Agentic Project
+  description: AI completes project requiring 3+ days of work
+  category: agents
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: true
+  aschenbrenner_timeline: '2027-01-01'
+  display_order: 2
+  direction: '>='
+- code: economic_displacement_10pct
+  name: 10% Remote Job Displacement
+  description: 10% of remote knowledge work jobs displaced (BLS data)
+  category: agents
+  baseline_value: 0.5
+  target_value: 10.0
+  unit: '% of remote jobs'
+  first_class: true
+  measurement_source: Bureau of Labor Statistics
+  aschenbrenner_timeline: '2027-09-01'
+  display_order: 3
+  direction: '>='
+- code: agent_100h_task
+  name: 100-Hour Autonomous Task
+  description: AI autonomously completes 100+ hour project with <2h human intervention
+  category: agents
+  baseline_value: 1.0
+  target_value: 100.0
+  unit: hours
+  direction: '>='
+  first_class: true
+  why_matters: Sustained autonomous operation. Critical for replacing knowledge workers
+    on complex projects.
+  ai2027_timeline: '2027-09-01'
+  ai2027_confidence: 0.55
+  prerequisite_codes: agent_reliability_80,long_horizon_30
+  display_order: 4
+- code: agentic_commerce
+  name: Agentic Commerce (Credit Card Authorization)
+  description: AI agents deployed with authority to make purchases on behalf of users
+  category: agents
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: true
+  why_matters: Economic agency. If AI trusted with financial decisions, represents
+    profound automation scope expansion.
+  measurement_methodology: Major platform (Amazon, Shopify) launches AI agent with
+    payment authority
+  verification_tier: B-tier (official launch)
+  ai2027_timeline: '2027-02-01'
+  ai2027_confidence: 0.5
+  prerequisite_codes: agent_reliability_80
+  display_order: 5
+  direction: '>='
+- code: enterprise_agent_adoption
+  name: F500 Enterprise AI Agent Deployment
+  description: 50% of Fortune 500 deploy AI agents in production workflows
+  category: agents
+  baseline_value: 0.05
+  target_value: 0.5
+  unit: '% of F500'
+  first_class: true
+  why_matters: Enterprise adoption = reliability + security validated. F500 represents
+    $20T+ revenue.
+  measurement_source: Gartner/IDC enterprise surveys
+  ai2027_timeline: '2027-12-01'
+  display_order: 6
+  direction: '>='
+- code: research_agent_demo
+  name: Autonomous Research Agent
+  description: 'AI conducts full research cycle: lit review, hypothesis, experiments,
+    analysis, paper'
+  category: agents
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: true
+  why_matters: Research acceleration across all scientific domains.
+  verification_tier: A-tier (peer-reviewed paper with AI as primary author)
+  aschenbrenner_timeline: '2027-03-01'
+  aschenbrenner_confidence: 0.6
+  prerequisite_codes: ai_researcher_demo
+  display_order: 7
+  direction: '>='
+- code: multi_agent_collab
+  name: Multi-Agent Collaborative Project
+  description: 5+ AI agents collaborate successfully on complex project
+  category: agents
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: false
+  ai2027_timeline: '2026-12-01'
+  display_order: 8
+  direction: '>='
+- code: digital_assistant_full
+  name: Full Digital Assistant (Calendar, Email, Scheduling)
+  description: AI manages calendar, email autonomously with 90% success rate
+  category: agents
+  baseline_value: 0.3
+  target_value: 0.9
+  unit: '%'
+  first_class: false
+  ai2027_timeline: '2026-06-01'
+  ai2027_confidence: 0.7
+  display_order: 9
+  direction: '>='
+- code: long_horizon_30
+  name: Long-Horizon Planning ≥30 Steps
+  description: AI executes plans requiring 30+ sequential steps with error recovery
+  category: agents
+  baseline_value: 5.0
+  target_value: 30.0
+  unit: steps
+  direction: '>='
+  first_class: true
+  why_matters: Complex tasks require long-horizon planning. Current agents fail around
+    5-10 steps. 30+ enables multi-day projects.
+  display_order: 10
+- code: osworld_latency_10min
+  name: OSWorld Latency <10min
+  category: agents
+  baseline_value: 45.0
+  target_value: 10.0
+  unit: minutes
+  direction: <=
+  first_class: false
+  display_order: 11
+- code: recursive_self_improvement
+  name: Recursive Self-Improvement Demo
+  category: agents
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: true
+  aschenbrenner_timeline: '2027-09-01'
+  display_order: 12
+  direction: '>='
+inputs:
+- code: compute_1e26
+  name: Training Compute 10^26 FLOP
+  description: Single training run reaches 10^26 floating point operations
+  category: inputs
+  baseline_value: 3.1e23
+  target_value: 1.0e26
+  unit: FLOP
+  direction: '>='
+  first_class: true
+  why_matters: 100x scaling from GPT-3 era. Enables models 300x larger, likely unlocking
+    qualitatively new capabilities.
+  measurement_methodology: Public model cards, training reports, GPU-hours estimates
+  aschenbrenner_timeline: '2026-01-01'
+  aschenbrenner_confidence: 0.8
+  epoch_timeline: '2025-12-01'
+  epoch_confidence: 0.75
+  cotra_timeline: '2027-06-01'
+  primary_paper_title: Scaling Laws for Neural Language Models
+  primary_paper_url: https://arxiv.org/abs/2001.08361
+  primary_paper_authors: Kaplan et al.
+  primary_paper_year: 2020
+  display_order: 1
+- code: compute_1e27
+  name: Training Compute 10^27 FLOP
+  description: Single training run reaches 10^27 FLOP
+  category: inputs
+  baseline_value: 3.1e23
+  target_value: 1.0e27
+  first_class: true
+  why_matters: Crosses Cotra's biological anchors threshold. 10x beyond 10^26.
+  aschenbrenner_timeline: '2027-06-01'
+  aschenbrenner_confidence: 0.6
+  epoch_timeline: '2027-06-01'
+  epoch_confidence: 0.65
+  cotra_timeline: '2027-12-31'
+  cotra_confidence: 0.4
+  display_order: 2
+  direction: <=
+- code: training_cost_100m
+  name: Training Run ≥$100M
+  description: Single model training costs $100M+ (frontier-scale investment)
+  category: inputs
+  baseline_value: 50.0
+  target_value: 100.0
+  unit: million USD
+  first_class: true
+  why_matters: Economic commitment signal. $100M+ indicates serious AGI pursuit, filters
+    smaller players.
+  measurement_methodology: GPU-hours × spot price + datacenter costs
+  aschenbrenner_timeline: '2026-06-01'
+  aschenbrenner_confidence: 0.75
+  aschenbrenner_quote: Billions, then tens of billions on single training runs
+  epoch_timeline: '2026-03-01'
+  epoch_confidence: 0.8
+  display_order: 3
+  direction: '>='
+- code: gpu_cluster_100k
+  name: GPU Cluster ≥100K H100-Equivalent
+  description: Single cluster with 100,000+ H100-equivalent GPUs
+  category: inputs
+  baseline_value: 35000
+  target_value: 100000
+  unit: GPUs
+  first_class: true
+  current_sota_value: 35000
+  current_sota_model: Meta cluster (reported)
+  aschenbrenner_timeline: '2027-01-01'
+  aschenbrenner_confidence: 0.65
+  aschenbrenner_quote: Clusters of hundreds of thousands of GPUs
+  display_order: 4
+  direction: '>='
+- code: dc_power_5gw
+  name: Datacenter Power ≥5 GW
+  description: Single AI datacenter with 5 GW electrical capacity
+  category: inputs
+  baseline_value: 0.15
+  target_value: 5.0
+  unit: gigawatts
+  first_class: true
+  why_matters: Physical constraint - 5 GW is size of small nuclear plant. Indicates
+    societal-scale resource commitment.
+  aschenbrenner_timeline: '2027-06-01'
+  aschenbrenner_confidence: 0.6
+  aschenbrenner_quote: 'By 2027/2028: single datacenter clusters of ~5 GW'
+  display_order: 5
+  direction: '>='
+- code: algo_doubling_2x_year
+  name: Algorithmic Efficiency Doubling <12 Months
+  description: Algos improve 2x per FLOP every 6-12 months
+  category: inputs
+  baseline_value: 1.5
+  target_value: 1.0
+  unit: years per doubling
+  direction: <=
+  first_class: true
+  why_matters: Compounds with compute scaling. If algos 2x/year + compute 4x/year
+    = 8x effective progress.
+  current_sota_value: 1.5
+  epoch_timeline: '2025-01-01'
+  epoch_confidence: 0.75
+  display_order: 6
+- code: training_time_3mo
+  name: Frontier Model Training <3 Months
+  category: inputs
+  baseline_value: 6.0
+  target_value: 3.0
+  unit: months
+  direction: <=
+  first_class: false
+  display_order: 7
+- code: inference_cost_low
+  name: Inference Cost ≤$0.001/1M Tokens
+  category: inputs
+  baseline_value: 0.25
+  target_value: 0.001
+  unit: USD per million tokens
+  direction: <=
+  first_class: false
+  why_matters: At $0.001/1M, AI economically viable for nearly all use cases (1000x
+    cheaper than GPT-4 launch).
+  current_sota_value: 0.25
+  current_sota_model: GPT-4o-mini
+  display_order: 8
+- code: oss_model_parity_6mo
+  name: Open Source Parity <6 Month Lag
+  description: OSS models reach frontier parity within 6 months
+  category: inputs
+  baseline_value: 12.0
+  target_value: 6.0
+  unit: months lag
+  direction: <=
+  first_class: false
+  current_sota_value: 12.0
+  epoch_timeline: '2026-01-01'
+  display_order: 9
+- code: chinchilla_scaling_holds
+  name: Chinchilla Scaling Laws Valid
+  category: inputs
+  baseline_value: 1.0
+  target_value: 1.0
+  unit: binary
+  first_class: false
+  epoch_confidence: 0.7
+  display_order: 10
+  direction: ">="
+- code: h100_supply_unconstrained
+  name: H100/B100 Supply Unconstrained
+  category: inputs
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: false
+  epoch_timeline: '2026-06-01'
+  display_order: 11
+  direction: '>='
+- code: inputs_flops_25
+  name: Training Compute 10^25 FLOP
+  category: inputs
+  display_order: 12
+  direction: '>='
+- code: inputs_flops_26
+  name: Training Compute 10^26 FLOP
+  category: inputs
+  display_order: 13
+  direction: '>='
+- code: inputs_flops_27
+  name: Training Compute 10^27 FLOP
+  category: inputs
+  display_order: 14
+  direction: '>='
+- code: algo_efficiency_1oom
+  name: Algorithmic Efficiency +1 OOM
+  category: inputs
+  display_order: 15
+  direction: '>='
+- code: algo_efficiency_2oom
+  name: Algorithmic Efficiency +2 OOM
+  category: inputs
+  display_order: 16
+  direction: '>='
+- code: dc_power_100mw
+  name: DC Power 0.1 GW
+  category: inputs
+  display_order: 17
+  direction: '>='
+- code: dc_power_1gw
+  name: DC Power 1 GW
+  category: inputs
+  display_order: 18
+  direction: '>='
+- code: dc_power_10gw
+  name: DC Power 10 GW
+  category: inputs
+  display_order: 19
+  direction: '>='
+- code: inputs_dc_1gw
+  name: DC Power 1 GW Milestone
+  category: inputs
+  display_order: 20
+  direction: '>='
+- code: inputs_dc_10gw
+  name: DC Power 10 GW Milestone
+  category: inputs
+  display_order: 21
+  direction: '>='
+- code: inputs_algo_oom
+  name: Algorithmic Efficiency OOM Milestones
+  category: inputs
+  display_order: 22
+  direction: '>='
+security:
+- code: sec_maturity
+  name: Security Maturity Index
+  category: security
+  baseline_value: 0.3
+  target_value: 0.9
+  first_class: true
+  display_order: 1
+  direction: '>='
+- code: security_l1_weights
+  name: 'Security L1: Model Weight Protection'
+  category: security
+  baseline_value: 0.2
+  target_value: 1.0
+  first_class: true
+  aschenbrenner_timeline: '2026-03-01'
+  aschenbrenner_confidence: 0.75
+  aschenbrenner_quote: Model weights will be among the most important secrets in the
+    world
+  display_order: 2
+  direction: '>='
+- code: security_l2_monitoring
+  name: 'Security L2: Inference Monitoring'
+  category: security
+  baseline_value: 0.15
+  target_value: 0.9
+  first_class: true
+  openai_prep_timeline: '2026-12-01'
+  display_order: 3
+  direction: '>='
+- code: security_l3_state_actor
+  name: 'Security L3: State-Actor Resistant'
+  category: security
+  baseline_value: 0.05
+  target_value: 0.8
+  first_class: true
+  display_order: 4
+  direction: '>='
+- code: mandatory_evals
+  name: Mandatory Pre-Deployment Evals
+  category: security
+  baseline_value: 0.15
+  target_value: 1.0
+  first_class: true
+  openai_prep_timeline: '2026-06-01'
+  display_order: 5
+  direction: '>='
+- code: mandatory_red_teaming
+  name: Mandatory Pre-Deployment Red Teaming
+  description: All frontier labs conduct third-party red teaming before deployment
+  category: security
+  baseline_value: 0.15
+  target_value: 1.0
+  unit: '% of frontier labs'
+  first_class: true
+  current_sota_value: 0.15
+  openai_prep_timeline: '2026-06-01'
+  openai_prep_risk_level: Medium - triggers deployment pause
+  display_order: 6
+  direction: '>='
+- code: cbrn_risk_medium
+  name: CBRN Risk 'Medium' Threshold
+  description: AI reaches OpenAI 'Medium' risk for CBRN threats
+  category: security
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: true
+  why_matters: Indicates AI could assist in bioweapon/cyberweapon development. Triggers
+    enhanced security.
+  openai_prep_timeline: '2025-06-01'
+  openai_prep_confidence: 0.5
+  display_order: 7
+  direction: '>='
+- code: cyber_risk_medium
+  name: Cybersecurity Risk 'Medium'
+  description: AI cyber capabilities (vuln discovery, exploits) reach Medium risk
+  category: security
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: true
+  openai_prep_timeline: '2025-12-01'
+  openai_prep_confidence: 0.6
+  display_order: 8
+  direction: '>='
+- code: weight_security_standard
+  name: Model Weight Security Standard
+  description: Industry-wide standard for securing model weights
+  category: security
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: true
+  aschenbrenner_timeline: '2026-03-01'
+  aschenbrenner_confidence: 0.75
+  display_order: 9
+  direction: '>='
+- code: inference_monitoring_deployed
+  name: Inference Monitoring (Industry-Wide)
+  description: 90% of major AI API providers deploy real-time misuse monitoring
+  category: security
+  baseline_value: 0.2
+  target_value: 0.9
+  unit: '% of API providers'
+  first_class: true
+  openai_prep_timeline: '2026-12-01'
+  display_order: 10
+  direction: '>='
+- code: ai_chip_export_controls
+  name: AI Chip Export Controls Enhanced
+  description: US tightens export controls on AI chips (H100+)
+  category: security
+  baseline_value: 1.0
+  target_value: 2.0
+  unit: control regime level
+  first_class: true
+  aschenbrenner_timeline: '2025-06-01'
+  aschenbrenner_confidence: 0.8
+  display_order: 11
+  direction: '>='
+- code: annual_ai_safety_summit
+  name: Annual International AI Safety Summit
+  category: security
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: false
+  display_order: 12
+  direction: '>='
+- code: capability_disclosure_req
+  name: Mandatory Capability Disclosure
+  category: security
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: true
+  openai_prep_timeline: '2026-06-01'
+  display_order: 13
+  direction: '>='
+- code: safety_research_1b
+  name: AI Safety Research ≥$1B/Year
+  category: security
+  baseline_value: 0.15
+  target_value: 1.0
+  unit: billion USD/year
+  first_class: false
+  current_sota_value: 0.15
+  display_order: 14
+  direction: '>='
+- code: ai_treaty_ratified
+  name: International AI Governance Treaty
+  category: security
+  baseline_value: 0.0
+  target_value: 1.0
+  first_class: false
+  display_order: 15
+  direction: '>='
+economic:
+- code: ai_services_market_100b
+  name: AI Services Market ≥$100B/Year
+  description: Combined AI API/services revenue reaches $100B annually
+  category: economic
+  baseline_value: 10.0
+  target_value: 100.0
+  unit: billion USD/year
+  first_class: true
+  why_matters: Economic validation. $100B indicates AI transforming trillion-dollar
+    industries.
+  measurement_source: Gartner/IDC market reports
+  current_sota_value: 10.0
+  display_order: 1
+  direction: '>='
+- code: ai_native_unicorn
+  name: First AI-Native $1B+ Company
+  description: First company valued at $1B+ using AI agents as core product
+  category: economic
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: false
+  ai2027_timeline: '2026-06-01'
+  display_order: 2
+  direction: '>='
+- code: enterprise_ai_spend_50b
+  name: Enterprise AI Spending ≥$50B/Year
+  category: economic
+  baseline_value: 15.0
+  target_value: 50.0
+  unit: billion USD/year
+  first_class: false
+  display_order: 3
+  direction: '>='
+- code: productivity_gains_measurable
+  name: AI Productivity Gains in GDP
+  description: 0.5%+ GDP growth attributable to AI (measurable)
+  category: economic
+  baseline_value: 0.0
+  target_value: 0.5
+  unit: '% GDP growth'
+  first_class: true
+  measurement_source: BLS productivity data
+  display_order: 4
+  direction: '>='
+- code: remote_work_displacement_bls
+  name: Remote Work Displacement ≥10% (BLS)
+  description: BLS data shows 10%+ of remote jobs displaced by AI
+  category: economic
+  baseline_value: 0.5
+  target_value: 10.0
+  unit: '% of remote jobs'
+  first_class: true
+  measurement_source: Bureau of Labor Statistics Employment Situation
+  aschenbrenner_timeline: '2027-12-01'
+  aschenbrenner_confidence: 0.6
+  display_order: 5
+  direction: '>='
+- code: dev_productivity_2x
+  name: Developer Productivity 2x
+  description: GitHub data shows devs 2x more productive with AI
+  category: economic
+  baseline_value: 1.2
+  target_value: 2.0
+  unit: relative to 2024
+  first_class: false
+  current_sota_value: 1.2
+  measurement_source: GitHub Octoverse
+  display_order: 6
+  direction: '>='
+- code: ai_job_postings_peak
+  name: AI Job Postings Peak then Decline
+  category: economic
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: false
+  display_order: 7
+  direction: '>='
+- code: ai_revenue_per_employee
+  name: AI Company Revenue >$5M/Employee
+  category: economic
+  baseline_value: 1.5
+  target_value: 5.0
+  unit: million USD/employee/year
+  first_class: false
+  display_order: 8
+  direction: '>='
+- code: ai_content_majority_web
+  name: AI Content ≥50% of New Web
+  category: economic
+  baseline_value: 0.15
+  target_value: 0.5
+  unit: '%'
+  first_class: false
+  display_order: 9
+  direction: '>='
+- code: ai_etf_10b
+  name: AI ETF >$10B AUM
+  category: economic
+  baseline_value: 5.0
+  target_value: 10.0
+  unit: billion USD
+  first_class: false
+  display_order: 10
+  direction: '>='
+research:
+- code: arxiv_ai_5k_month
+  name: arXiv AI Papers ≥5,000/Month
+  description: Monthly AI/ML papers reaches 5,000
+  category: research
+  baseline_value: 3500
+  target_value: 5000
+  unit: papers/month
+  first_class: false
+  measurement_source: arXiv API (cs.AI, cs.LG, cs.CL, cs.CV)
+  current_sota_value: 3500
+  display_order: 1
+  direction: '>='
+- code: sota_improvement_90d
+  name: SOTA Improvement Cycle <90 Days
+  description: Time between major benchmark improvements <90 days
+  category: research
+  baseline_value: 180
+  target_value: 90
+  unit: days
+  direction: <=
+  first_class: true
+  why_matters: Faster cycles = research acceleration. <90d means 4+ iterations/year.
+  current_sota_value: 180
+  display_order: 2
+- code: post_transformer_arch
+  name: Post-Transformer SOTA
+  description: Non-transformer architecture achieves SOTA on major benchmarks
+  category: research
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: true
+  why_matters: Paradigm shift indicator. Would significantly change timelines.
+  display_order: 3
+  direction: '>='
+- code: breakthrough_papers_10
+  name: ≥10 Breakthrough Papers/Year
+  category: research
+  baseline_value: 3.0
+  target_value: 10.0
+  unit: papers/year
+  first_class: false
+  display_order: 4
+  direction: '>='
+- code: frontier_labs_10
+  name: ≥10 Frontier AI Labs
+  category: research
+  baseline_value: 5.0
+  target_value: 10.0
+  unit: number of labs
+  first_class: false
+  current_sota_value: 5.0
+  epoch_timeline: '2026-01-01'
+  display_order: 5
+  direction: '>='
+- code: oss_contribution_rate
+  name: OSS AI Contribution Rate
+  category: research
+  baseline_value: 0.3
+  target_value: 0.6
+  unit: '%'
+  first_class: false
+  display_order: 6
+  direction: '>='
+- code: auto_lit_review
+  name: Automated Literature Review Adoption
+  category: research
+  baseline_value: 0.1
+  target_value: 0.7
+  unit: '% of researchers'
+  first_class: false
+  display_order: 7
+  direction: '>='
+- code: preprint_to_pub_6mo
+  name: Preprint to Published <6mo
+  category: research
+  baseline_value: 12.0
+  target_value: 6.0
+  unit: months
+  direction: <=
+  first_class: false
+  display_order: 8
+geopolitical:
+- code: us_china_compute_gap_3x
+  name: US-China Compute Gap ≥3x
+  description: US advantage in AI compute over China reaches 3x
+  category: geopolitical
+  baseline_value: 2.0
+  target_value: 3.0
+  unit: ratio
+  first_class: true
+  why_matters: Geopolitical competition. Compute gap determines AGI race leader.
+  measurement_source: Epoch AI estimates, CSET reports
+  aschenbrenner_timeline: '2025-12-01'
+  aschenbrenner_confidence: 0.7
+  display_order: 1
+  direction: '>='
+- code: govt_ai_initiative_10b
+  name: Government AI Initiative ≥$10B
+  description: Major government announces ≥$10B AI initiative
+  category: geopolitical
+  baseline_value: 1.0
+  target_value: 10.0
+  unit: billion USD
+  first_class: true
+  aschenbrenner_timeline: '2025-12-01'
+  aschenbrenner_confidence: 0.8
+  aschenbrenner_quote: Stargate project likely as national security urgency increases
+  display_order: 2
+  direction: '>='
+- code: allied_ai_consortium
+  name: Allied AI Consortium (US+Allies)
+  category: geopolitical
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: false
+  aschenbrenner_timeline: '2026-01-01'
+  display_order: 3
+  direction: '>='
+- code: china_h100_equivalent
+  name: China Domestic H100-Equivalent
+  category: geopolitical
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: true
+  why_matters: Major wildcard. Would bypass export controls, enable China to compete.
+  display_order: 4
+  direction: '>='
+- code: agi_arms_race_rhetoric
+  name: Official 'AGI Race' Rhetoric
+  category: geopolitical
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: false
+  aschenbrenner_timeline: '2026-01-01'
+  display_order: 5
+  direction: '>='
+- code: ai_safety_treaty_negotiation
+  name: AI Safety Treaty Negotiation
+  category: geopolitical
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: true
+  display_order: 6
+  direction: '>='
+- code: compute_nationalization
+  name: Compute Nationalization Proposals
+  category: geopolitical
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: false
+  aschenbrenner_timeline: '2027-01-01'
+  aschenbrenner_confidence: 0.4
+  display_order: 7
+  direction: '>='
+- code: ai_incident_policy_trigger
+  name: AI Incident Triggers Policy Change
+  category: geopolitical
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: true
+  why_matters: Policy catalyst. Major incident accelerates regulation/funding/restrictions.
+  display_order: 8
+  direction: '>='
+safety_incidents:
+- code: jailbreak_exploit_wild
+  name: Major Jailbreak Exploited at Scale
+  category: safety_incidents
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: false
+  is_negative_indicator: true
+  why_matters: Negative indicator - tracks risk materialization
+  display_order: 1
+  direction: '>='
+- code: ai_cyber_attack_confirmed
+  name: Confirmed AI-Assisted Cyberattack
+  category: safety_incidents
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: true
+  is_negative_indicator: true
+  display_order: 2
+  direction: '>='
+- code: ai_misuse_congress
+  name: Congressional Hearing on AI Misuse
+  category: safety_incidents
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: false
+  is_negative_indicator: true
+  display_order: 3
+  direction: '>='
+- code: capability_overhang
+  name: Capability Overhang Documented
+  description: Model has >20% hidden capabilities unlocked via scaffolding
+  category: safety_incidents
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: true
+  is_negative_indicator: true
+  why_matters: Latent capabilities make safety evaluation difficult
+  display_order: 4
+  direction: '>='
+- code: safety_researcher_shortage
+  name: Safety Researcher Shortage (10:1 ratio)
+  category: safety_incidents
+  baseline_value: 5.0
+  target_value: 10.0
+  unit: capability:safety researcher ratio
+  first_class: false
+  is_negative_indicator: true
+  display_order: 5
+  direction: '>='
+- code: alignment_failure_public
+  name: Public Alignment Failure
+  category: safety_incidents
+  baseline_value: 0.0
+  target_value: 1.0
+  unit: binary
+  first_class: true
+  is_negative_indicator: true
+  why_matters: Negative - tracks goal misgeneralization, deception in deployment
+  display_order: 6
+  direction: '>='

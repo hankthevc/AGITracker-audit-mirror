@@ -1,0 +1,383 @@
+# Event-to-Signpost Mapping Rules (v0.3)
+#
+# Rules for mapping news events to signposts using keyword/phrase matching.
+# Each rule specifies patterns to match and the target signpost code.
+#
+# Structure:
+# - pattern: string or regex to match in title/summary (case-insensitive)
+#   signpost_code: target signpost code  
+#   confidence: base confidence score (0.0-1.0)
+#   category: capabilities|agents|inputs|security
+#   synonyms: alternative terms (optional)
+
+version: "1.0"
+description: "Heuristic keyword rules for event-to-signpost mapping"
+
+rules:
+  # ============================================================================
+  # CAPABILITIES - Benchmark Performance
+  # ============================================================================
+  
+  - pattern: "SWE-?bench"
+    signpost_code: "CAP-R01"
+    confidence: 0.85
+    category: "capabilities"
+    description: "Software engineering benchmark results"
+    synonyms: ["SWE-bench verified", "SWE-bench full", "code generation benchmark"]
+  
+  - pattern: "OSWorld"
+    signpost_code: "CAP-R02"
+    confidence: 0.85
+    category: "capabilities"
+    description: "OS-level task performance"
+    synonyms: ["operating system agent", "OS automation"]
+  
+  - pattern: "WebArena"
+    signpost_code: "CAP-R03"
+    confidence: 0.85
+    category: "capabilities"
+    description: "Web navigation and automation"
+    synonyms: ["web agent", "web automation", "browser automation"]
+  
+  - pattern: "GPQA"
+    signpost_code: "CAP-R04"
+    confidence: 0.85
+    category: "capabilities"
+    description: "Graduate-level science Q&A"
+    synonyms: ["GPQA Diamond", "graduate physics", "science reasoning"]
+  
+  - pattern: "MMLU"
+    signpost_code: "CAP-R05"
+    confidence: 0.80
+    category: "capabilities"
+    description: "Massive Multitask Language Understanding"
+    synonyms: ["multitask language", "general knowledge"]
+  
+  - pattern: "HumanEval"
+    signpost_code: "CAP-R06"
+    confidence: 0.80
+    category: "capabilities"
+    description: "Programming problem solving"
+    synonyms: ["code completion", "python programming"]
+  
+  - pattern: "GSM-?8K"
+    signpost_code: "CAP-R07"
+    confidence: 0.80
+    category: "capabilities"
+    description: "Grade school math reasoning"
+    synonyms: ["math word problems", "arithmetic reasoning"]
+  
+  - pattern: "MATH benchmark"
+    signpost_code: "CAP-R08"
+    confidence: 0.80
+    category: "capabilities"
+    description: "Advanced mathematics"
+    synonyms: ["competition math", "mathematical reasoning"]
+  
+  - pattern: "DROP"
+    signpost_code: "CAP-R09"
+    confidence: 0.75
+    category: "capabilities"
+    description: "Discrete reasoning over paragraphs"
+    synonyms: ["reading comprehension", "numerical reasoning"]
+  
+  - pattern: "ARC-?Challenge"
+    signpost_code: "CAP-R10"
+    confidence: 0.75
+    category: "capabilities"
+    description: "Science exam questions"
+    synonyms: ["AI2 reasoning", "science QA"]
+  
+  - pattern: "HellaSwag"
+    signpost_code: "CAP-R11"
+    confidence: 0.75
+    category: "capabilities"
+    description: "Common sense reasoning"
+    synonyms: ["commonsense NLI", "situation completion"]
+  
+  - pattern: "TruthfulQA"
+    signpost_code: "CAP-R12"
+    confidence: 0.75
+    category: "capabilities"
+    description: "Factual accuracy"
+    synonyms: ["truthfulness", "factual QA"]
+  
+  - pattern: "BigBench"
+    signpost_code: "CAP-R13"
+    confidence: 0.70
+    category: "capabilities"
+    description: "Beyond the Imitation Game benchmark"
+    synonyms: ["BIG-bench", "diverse tasks"]
+  
+  - pattern: "HELM"
+    signpost_code: "CAP-R14"
+    confidence: 0.70
+    category: "capabilities"
+    description: "Holistic Evaluation of Language Models"
+    synonyms: ["holistic evaluation", "standardized benchmarks"]
+  
+  # ============================================================================
+  # AGENTS - Multi-Step & Multi-Day Tasks
+  # ============================================================================
+  
+  - pattern: "multi-?step"
+    signpost_code: "AGT-R01"
+    confidence: 0.70
+    category: "agents"
+    description: "Multi-step task completion"
+    synonyms: ["sequential tasks", "chained actions", "task planning"]
+  
+  - pattern: "multi-?day project"
+    signpost_code: "AGT-R02"
+    confidence: 0.75
+    category: "agents"
+    description: "Extended project execution"
+    synonyms: ["long-horizon tasks", "project management", "persistent agents"]
+  
+  - pattern: "agentic"
+    signpost_code: "AGT-R03"
+    confidence: 0.65
+    category: "agents"
+    description: "General agent capabilities"
+    synonyms: ["autonomous agent", "AI agent", "agentive"]
+  
+  - pattern: "tool use"
+    signpost_code: "AGT-R04"
+    confidence: 0.70
+    category: "agents"
+    description: "API and tool usage"
+    synonyms: ["function calling", "tool invocation", "API integration"]
+  
+  - pattern: "planning"
+    signpost_code: "AGT-R05"
+    confidence: 0.65
+    category: "agents"
+    description: "Task planning and decomposition"
+    synonyms: ["task decomposition", "strategic planning", "plan generation"]
+  
+  - pattern: "self-?correction"
+    signpost_code: "AGT-R06"
+    confidence: 0.70
+    category: "agents"
+    description: "Error detection and correction"
+    synonyms: ["self-refinement", "iterative improvement", "error recovery"]
+  
+  # ============================================================================
+  # INPUTS - Compute Scale
+  # ============================================================================
+  
+  - pattern: "10\\^26|1e26|E26"
+    signpost_code: "INP-R01"
+    confidence: 0.85
+    category: "inputs"
+    description: "Training compute milestone (10^26 FLOP)"
+    synonyms: ["hundred trillion", "training FLOPs"]
+  
+  - pattern: "10\\^27|1e27|E27"
+    signpost_code: "INP-R02"
+    confidence: 0.85
+    category: "inputs"
+    description: "Training compute milestone (10^27 FLOP)"
+    synonyms: ["1 quintillion", "exascale training"]
+  
+  - pattern: "H100"
+    signpost_code: "INP-R03"
+    confidence: 0.75
+    category: "inputs"
+    description: "NVIDIA H100 GPU deployment"
+    synonyms: ["Hopper GPU", "100M H100s"]
+  
+  - pattern: "datacenter|data center"
+    signpost_code: "INP-R04"
+    confidence: 0.60
+    category: "inputs"
+    description: "Datacenter infrastructure"
+    synonyms: ["DC power", "compute cluster"]
+  
+  - pattern: "GW|gigawatt"
+    signpost_code: "INP-R05"
+    confidence: 0.75
+    category: "inputs"
+    description: "Datacenter power capacity"
+    synonyms: ["power consumption", "energy usage"]
+  
+  - pattern: "Chinchilla"
+    signpost_code: "INP-R06"
+    confidence: 0.70
+    category: "inputs"
+    description: "Compute-optimal scaling laws"
+    synonyms: ["scaling laws", "compute optimal", "Chinchilla scaling"]
+  
+  - pattern: "algorithmic efficiency"
+    signpost_code: "INP-R07"
+    confidence: 0.75
+    category: "inputs"
+    description: "Algorithmic efficiency gains"
+    synonyms: ["effective compute", "algorithmic progress", "efficiency OOM"]
+  
+  - pattern: "OOM|order of magnitude"
+    signpost_code: "INP-R08"
+    confidence: 0.70
+    category: "inputs"
+    description: "Orders of magnitude improvement"
+    synonyms: ["10x improvement", "exponential gains"]
+  
+  # ============================================================================
+  # SECURITY - Model Security & Governance
+  # ============================================================================
+  
+  - pattern: "weight.{0,10}security"
+    signpost_code: "SEC-R01"
+    confidence: 0.80
+    category: "security"
+    description: "Model weight protection"
+    synonyms: ["weight theft", "model exfiltration", "parameter security"]
+  
+  - pattern: "weight.{0,10}leak"
+    signpost_code: "SEC-R01"
+    confidence: 0.85
+    category: "security"
+    description: "Model weight leaks/theft"
+    synonyms: ["stolen weights", "leaked model"]
+  
+  - pattern: "red.?team"
+    signpost_code: "SEC-R02"
+    confidence: 0.75
+    category: "security"
+    description: "Red teaming exercises"
+    synonyms: ["adversarial testing", "security assessment", "red team drills"]
+  
+  - pattern: "HSM|hardware security module"
+    signpost_code: "SEC-R03"
+    confidence: 0.85
+    category: "security"
+    description: "Hardware security modules"
+    synonyms: ["secure enclaves", "trusted execution"]
+  
+  - pattern: "audit"
+    signpost_code: "SEC-R04"
+    confidence: 0.70
+    category: "security"
+    description: "Security audits"
+    synonyms: ["third-party audit", "compliance audit", "security review"]
+  
+  - pattern: "attestation"
+    signpost_code: "SEC-R05"
+    confidence: 0.75
+    category: "security"
+    description: "Security attestation"
+    synonyms: ["compliance certification", "security attestation"]
+  
+  - pattern: "eval mandate"
+    signpost_code: "SEC-R06"
+    confidence: 0.75
+    category: "security"
+    description: "Evaluation mandates"
+    synonyms: ["mandatory evals", "required evaluations"]
+  
+  - pattern: "frontier model"
+    signpost_code: "SEC-R07"
+    confidence: 0.70
+    category: "security"
+    description: "Frontier model regulations"
+    synonyms: ["advanced AI systems", "cutting-edge models"]
+  
+  - pattern: "dual.?use"
+    signpost_code: "SEC-R08"
+    confidence: 0.70
+    category: "security"
+    description: "Dual-use capabilities"
+    synonyms: ["dual purpose", "misuse potential"]
+  
+  - pattern: "jailbreak"
+    signpost_code: "SEC-R09"
+    confidence: 0.75
+    category: "security"
+    description: "Jailbreak attacks"
+    synonyms: ["prompt injection", "safety bypass", "adversarial prompts"]
+  
+  - pattern: "safety alignment"
+    signpost_code: "SEC-R10"
+    confidence: 0.70
+    category: "security"
+    description: "Safety and alignment work"
+    synonyms: ["value alignment", "AI safety", "alignment research"]
+  
+  # ============================================================================
+  # CROSS-CUTTING - General AI Progress
+  # ============================================================================
+  
+  - pattern: "AGI|artificial general intelligence"
+    signpost_code: "CROSS-R01"
+    confidence: 0.60
+    category: "capabilities"
+    description: "General AGI discussion"
+    synonyms: ["general intelligence", "human-level AI"]
+  
+  - pattern: "GPT-?[56789]|o\\d"
+    signpost_code: "CROSS-R02"
+    confidence: 0.65
+    category: "capabilities"
+    description: "Major OpenAI model releases"
+    synonyms: ["next generation", "frontier model"]
+  
+  - pattern: "Claude.?(3|4|5)"
+    signpost_code: "CROSS-R03"
+    confidence: 0.65
+    category: "capabilities"
+    description: "Major Anthropic model releases"
+    synonyms: ["Claude Opus", "Claude Sonnet"]
+  
+  - pattern: "Gemini.?(2|3)"
+    signpost_code: "CROSS-R04"
+    confidence: 0.65
+    category: "capabilities"
+    description: "Major Google DeepMind model releases"
+    synonyms: ["Gemini Ultra", "Gemini Pro"]
+  
+  - pattern: "multimodal"
+    signpost_code: "CROSS-R05"
+    confidence: 0.60
+    category: "capabilities"
+    description: "Multimodal capabilities"
+    synonyms: ["vision and language", "text and image", "cross-modal"]
+  
+  - pattern: "reasoning"
+    signpost_code: "CROSS-R06"
+    confidence: 0.55
+    category: "capabilities"
+    description: "Reasoning improvements"
+    synonyms: ["logical reasoning", "inference", "deduction"]
+  
+  - pattern: "context window|context length"
+    signpost_code: "CROSS-R07"
+    confidence: 0.60
+    category: "capabilities"
+    description: "Context window expansions"
+    synonyms: ["long context", "extended context", "context size"]
+
+# ============================================================================
+# Metadata
+# ============================================================================
+
+metadata:
+  total_rules: 57
+  categories:
+    capabilities: 25
+    agents: 6
+    inputs: 8
+    security: 10
+    cross_cutting: 8
+  
+  confidence_ranges:
+    high: "0.80-1.00 (direct benchmark mention)"
+    medium: "0.60-0.79 (related terms)"
+    low: "0.40-0.59 (weak signals)"
+  
+  usage_notes: |
+    - Patterns are case-insensitive by default
+    - Use regex syntax for flexible matching (e.g., "10\\^26" matches "10^26")
+    - Multiple rules can fire for the same event
+    - Confidence scores are combined (take max) when multiple rules match
+    - Events with confidence < 0.6 are flagged for manual review
+

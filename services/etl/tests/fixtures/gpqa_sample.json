@@ -1,0 +1,21 @@
+{
+  "benchmark": "GPQA-Diamond",
+  "leaderboard_data": [
+    {
+      "model": "Claude-3.5-Sonnet",
+      "accuracy": 0.653,
+      "date": "2024-10"
+    },
+    {
+      "model": "GPT-4o",
+      "accuracy": 0.639,
+      "date": "2024-09"
+    },
+    {
+      "model": "Gemini-1.5-Pro",
+      "accuracy": 0.587,
+      "date": "2024-08"
+    }
+  ]
+}
+

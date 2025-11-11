@@ -1,0 +1,19 @@
+[
+  {
+    "signpost_code": "swe_bench_85",
+    "target_date": "2027-06-30",
+    "label": "Metaculus AGI proxy: SWE automation",
+    "confidence": 0.5,
+    "rationale": "Metaculus community median",
+    "provisional": true
+  },
+  {
+    "signpost_code": "compute_1e28",
+    "target_date": "2029-12-31",
+    "label": "10^28 FLOP training run",
+    "confidence": 0.4,
+    "rationale": "Extended scaling timeline",
+    "provisional": true
+  }
+]
+

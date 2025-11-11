@@ -1,0 +1,314 @@
+# Alias → Signpost Code Mapping for event_mapper.py
+# Format: list of {pattern, codes, boost}
+# 
+# Comprehensive extraction of predictions from:
+# - Aschenbrenner's "Situational Awareness"
+# - AI 2027 Scenarios
+# - Epoch AI / Bio Anchors (Cotra)
+# - OpenAI Preparedness Framework
+
+# ============================================================================
+# CAPABILITIES - Benchmark Performance
+# ============================================================================
+
+capabilities_benchmarks:
+  # Software Engineering
+  - pattern: "swe-?bench"
+    codes: [swe_bench_85, swe_bench_90, swe_bench_70]
+    boost: 0.3
+  - pattern: "autonomous.?coding|ai.?software.?engineer"
+    codes: [swe_bench_85, swe_bench_90]
+    boost: 0.2
+  - pattern: "(70|75|80|85|90)%.*(swe-?bench|software|github.?issues)"
+    codes: [swe_bench_70, swe_bench_85, swe_bench_90]
+    boost: 0.4
+  
+  # OS-level task automation
+  - pattern: "osworld|os-?world"
+    codes: [osworld_50, osworld_65, osworld_85]
+    boost: 0.3
+  - pattern: "computer.?use|os.?automation"
+    codes: [osworld_50, osworld_65]
+    boost: 0.2
+  - pattern: "(50|65|70|85)%.*(osworld|computer.?use)"
+    codes: [osworld_50, osworld_65, osworld_85]
+    boost: 0.4
+  
+  # Web navigation
+  - pattern: "webarena|web-?arena"
+    codes: [webarena_60, webarena_70, webarena_85]
+    boost: 0.3
+  - pattern: "web.?navigation|web.?agent|browser.?automation"
+    codes: [webarena_60, webarena_70]
+    boost: 0.2
+  - pattern: "(60|70|80|85)%.*(webarena|web.?navigation)"
+    codes: [webarena_60, webarena_70, webarena_85]
+    boost: 0.4
+  
+  # PhD-level reasoning
+  - pattern: "gpqa|graduate.?level|phd.?level"
+    codes: [gpqa_75, gpqa_sota, gpqa_phd_parity]
+    boost: 0.3
+  - pattern: "scientific.?reasoning|expert.?reasoning"
+    codes: [gpqa_75, gpqa_sota]
+    boost: 0.2
+  - pattern: "(70|75|80|85)%.*(gpqa|phd|graduate)"
+    codes: [gpqa_75, gpqa_sota, gpqa_phd_parity]
+    boost: 0.4
+  
+  # Humanity's Last Exam
+  - pattern: "hle|humanity.*last.*exam"
+    codes: [hle_text_50, hle_text_70]
+    boost: 0.3
+  - pattern: "comprehensive.?reasoning|general.?intelligence"
+    codes: [hle_text_50, hle_text_70]
+    boost: 0.1
+  
+  # Additional reasoning benchmarks
+  - pattern: "mmlu|massive.?multitask"
+    codes: [gpqa_75]  # Related reasoning capability
+    boost: 0.1
+  - pattern: "math.?benchmark|mathematics.?reasoning"
+    codes: [gpqa_75]
+    boost: 0.1
+  - pattern: "humaneval|coding.?benchmark"
+    codes: [swe_bench_70]
+    boost: 0.1
+
+# ============================================================================
+# AGENTS - Autonomous Task Completion
+# ============================================================================
+
+agents:
+  # Multi-step reliability
+  - pattern: "agent.?reliability|multi-?step"
+    codes: [agent_reliability_80]
+    boost: 0.3
+  - pattern: "autonomous.?agent|ai.?agent"
+    codes: [agent_reliability_80]
+    boost: 0.2
+  - pattern: "(70|75|80|85)%.*(agent|autonomous|reliability)"
+    codes: [agent_reliability_80]
+    boost: 0.4
+  
+  # Multi-day projects
+  - pattern: "multi-?day.?project"
+    codes: [multi_day_project]
+    boost: 0.3
+  - pattern: "long.?horizon|extended.?task|multi.?day"
+    codes: [multi_day_project]
+    boost: 0.2
+  
+  # Economic displacement
+  - pattern: "job.?displacement|remote.?work"
+    codes: [economic_displacement_10pct]
+    boost: 0.2
+  - pattern: "knowledge.?work|cognitive.?automation"
+    codes: [economic_displacement_10pct]
+    boost: 0.2
+  - pattern: "(5|10|15|20)%.*(job|displacement|automation)"
+    codes: [economic_displacement_10pct]
+    boost: 0.3
+  
+  # Drop-in remote workers
+  - pattern: "drop-?in.?remote|remote.?worker"
+    codes: [agent_reliability_80, economic_displacement_10pct]
+    boost: 0.3
+  - pattern: "ai.?employee|automated.?worker"
+    codes: [agent_reliability_80]
+    boost: 0.2
+  
+  # AI R&D automation
+  - pattern: "ai.?researcher|automated.?research|r&d.?automation"
+    codes: [agent_reliability_80, multi_day_project]
+    boost: 0.3
+
+# ============================================================================
+# INPUTS - Training Compute, Power, Algorithmic Efficiency
+# ============================================================================
+
+inputs_compute:
+  # FLOP milestones (10^24 through 10^29)
+  - pattern: "10\\^24|1e24"
+    codes: [compute_1e26]  # Baseline reference
+    boost: 0.2
+  - pattern: "10\\^25|1e25"
+    codes: [compute_1e26]  # Leading indicator
+    boost: 0.3
+  - pattern: "10\\^26|1e26"
+    codes: [compute_1e26, inputs_flops_26]
+    boost: 0.4
+  - pattern: "10\\^27|1e27"
+    codes: [compute_1e27, inputs_flops_27]
+    boost: 0.4
+  - pattern: "10\\^28|1e28"
+    codes: [compute_1e27]  # Future milestone
+    boost: 0.3
+  - pattern: "10\\^29|1e29"
+    codes: [compute_1e27]  # Bio anchors threshold
+    boost: 0.3
+  
+  # FLOP terminology
+  - pattern: "training.?compute|compute.?budget"
+    codes: [compute_1e26, compute_1e27]
+    boost: 0.2
+  - pattern: "flop|floating.?point"
+    codes: [compute_1e26, compute_1e27]
+    boost: 0.1
+  - pattern: "petaflop|exaflop"
+    codes: [compute_1e26]
+    boost: 0.2
+  
+  # Effective compute (compute + algos)
+  - pattern: "effective.?compute|10x.?every|doubling"
+    codes: [algo_efficiency_2oom]
+    boost: 0.3
+  - pattern: "9.?month|8.?month.?doubling"
+    codes: [algo_efficiency_2oom]
+    boost: 0.3
+
+inputs_power:
+  # Datacenter power capacity
+  - pattern: "100.?mw|0\\.1.?gw"
+    codes: [dc_power_1gw]  # Leading indicator
+    boost: 0.2
+  - pattern: "1\\s*gw|1.?gigawatt"
+    codes: [dc_power_1gw, inputs_dc_1gw]
+    boost: 0.4
+  - pattern: "5\\s*gw|5.?gigawatt"
+    codes: [dc_power_10gw]  # Intermediate milestone
+    boost: 0.3
+  - pattern: "10\\s*gw|10.?gigawatt"
+    codes: [dc_power_10gw, inputs_dc_10gw]
+    boost: 0.4
+  - pattern: "datacenter|data.?center"
+    codes: [dc_power_1gw]
+    boost: 0.1
+  - pattern: "power.?capacity|energy.?infrastructure"
+    codes: [dc_power_1gw, dc_power_10gw]
+    boost: 0.2
+  
+  # GPU/chip counts
+  - pattern: "100.?million.?gpu|100m.?gpu"
+    codes: [dc_power_10gw]  # Proxy for massive scale
+    boost: 0.3
+  - pattern: "gpu.?cluster|training.?cluster"
+    codes: [dc_power_1gw]
+    boost: 0.1
+
+inputs_algorithmic:
+  # Algorithmic efficiency improvements
+  - pattern: "algorithmic.?efficiency|unhobbling"
+    codes: [algo_efficiency_2oom]
+    boost: 0.3
+  - pattern: "2.?oom|100x|two.?orders"
+    codes: [algo_efficiency_2oom]
+    boost: 0.3
+  - pattern: "3.?oom|1000x|three.?orders"
+    codes: [algo_efficiency_2oom]  # Beyond current milestone
+    boost: 0.2
+  - pattern: "efficiency.?gain|compute.?multiplier"
+    codes: [algo_efficiency_2oom]
+    boost: 0.2
+  
+  # Specific algorithmic improvements
+  - pattern: "mixture.?of.?experts|moe"
+    codes: [algo_efficiency_2oom]
+    boost: 0.1
+  - pattern: "sparse.?model|model.?compression"
+    codes: [algo_efficiency_2oom]
+    boost: 0.1
+  - pattern: "quantization|pruning"
+    codes: [algo_efficiency_2oom]
+    boost: 0.1
+
+# ============================================================================
+# SECURITY - Safety, Governance, Alignment
+# ============================================================================
+
+security:
+  # Weight security (Level 1)
+  - pattern: "model.?weight|weight.?security"
+    codes: [security_l1_weights]
+    boost: 0.3
+  - pattern: "model.?theft|weight.?exfiltration"
+    codes: [security_l1_weights]
+    boost: 0.3
+  
+  # Inference monitoring (Level 2)
+  - pattern: "inference.?monitoring|runtime.?monitoring"
+    codes: [security_l2_monitoring]
+    boost: 0.3
+  - pattern: "deployment.?security|production.?monitoring"
+    codes: [security_l2_monitoring]
+    boost: 0.2
+  
+  # Red teaming & evaluations
+  - pattern: "red.?team|adversarial.?testing"
+    codes: [security_l1_weights, security_l2_monitoring]
+    boost: 0.2
+  - pattern: "safety.?eval|evaluation.?framework"
+    codes: [mandatory_evals]
+    boost: 0.2
+  - pattern: "jailbreak|prompt.?injection"
+    codes: [security_l2_monitoring]
+    boost: 0.2
+  
+  # Mandatory evaluations
+  - pattern: "mandatory.?eval|required.?testing"
+    codes: [mandatory_evals]
+    boost: 0.3
+  - pattern: "safety.?standard|compliance.?framework"
+    codes: [mandatory_evals]
+    boost: 0.2
+  
+  # Governance & policy
+  - pattern: "ai.?treaty|international.?agreement"
+    codes: [ai_treaty_ratified]
+    boost: 0.3
+  - pattern: "regulation|governance.?framework"
+    codes: [mandatory_evals, ai_treaty_ratified]
+    boost: 0.2
+  - pattern: "export.?control|national.?security"
+    codes: [security_l1_weights]
+    boost: 0.2
+
+# ============================================================================
+# CROSS-CUTTING - AGI Timeline Indicators
+# ============================================================================
+
+timeline_keywords:
+  # General AGI mentions
+  - pattern: "agi|artificial.?general.?intelligence"
+    codes: [agent_reliability_80, economic_displacement_10pct]
+    boost: 0.1
+  - pattern: "transformative.?ai|tai"
+    codes: [compute_1e27, agent_reliability_80]
+    boost: 0.2
+  
+  # 2025-2027 timeline mentions
+  - pattern: "2025|twenty.?twenty.?five"
+    codes: [compute_1e26, swe_bench_70]
+    boost: 0.1
+  - pattern: "2026|twenty.?twenty.?six"
+    codes: [compute_1e27, swe_bench_85]
+    boost: 0.1
+  - pattern: "2027|twenty.?twenty.?seven"
+    codes: [agent_reliability_80, economic_displacement_10pct]
+    boost: 0.1
+  
+  # Scaling laws
+  - pattern: "scaling.?law|power.?law"
+    codes: [compute_1e26, algo_efficiency_2oom]
+    boost: 0.2
+  - pattern: "chinchilla|kaplan"
+    codes: [compute_1e26]
+    boost: 0.1
+  
+  # Key orgs/projects (weak signals)
+  - pattern: "openai|anthropic|deepmind|meta.?ai"
+    codes: []  # No direct code, but boosts relevance
+    boost: 0.0
+  - pattern: "gpt-?5|claude.?4|gemini.?2"
+    codes: [gpqa_75, swe_bench_85]
+    boost: 0.1
